@@ -1,0 +1,12 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Fedorov;Denys;;;
+FN:Denys Fedorov
+TITLE:HPB Surgeon; Liver Transplant Surgeon
+ORG:National Scientific Center of Surgery and Transplantology named after O.O. Shalimov
+URL:https://fedorov.liver.surgery
+EMAIL:your.email@example.com
+TEL:+380XXXXXXXXX
+ADR:;;Kyiv;;;Ukraine
+NOTE:Edit this vCard in docs/vcard/denys-fedorov.vcf
+END:VCARD
