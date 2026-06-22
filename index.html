@@ -19,14 +19,22 @@
 <body>
   <header class="site-header">
     <nav class="nav" aria-label="Main navigation">
-      <a class="logo" href="#top">DF</a>
-      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">Menu</button>
+      <a class="logo" href="#top" aria-label="Home">DF</a>
+
+      <div class="nav-actions">
+        <div class="language-switcher" aria-label="Language switcher">
+          <button type="button" class="lang-button" data-lang-switch="uk" aria-label="Українська">UA</button>
+          <button type="button" class="lang-button" data-lang-switch="en" aria-label="English">EN</button>
+        </div>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" data-i18n="nav.menu">Menu</button>
+      </div>
+
       <div class="nav-menu" id="nav-menu">
-        <a href="#about">Про мене</a>
-        <a href="#expertise">Напрями</a>
-        <a href="#projects">Проєкти</a>
-        <a href="#publications">Наука</a>
-        <a href="#contact">Контакти</a>
+        <a href="#about" data-i18n="nav.about">Про мене</a>
+        <a href="#expertise" data-i18n="nav.expertise">Напрями</a>
+        <a href="#projects" data-i18n="nav.projects">Проєкти</a>
+        <a href="#publications" data-i18n="nav.publications">Наука</a>
+        <a href="#contact" data-i18n="nav.contact">Контакти</a>
       </div>
     </nav>
   </header>
@@ -34,68 +42,86 @@
   <main id="top">
     <section class="hero section">
       <div class="hero-content">
-        <p class="eyebrow">Liver Surgery · HPB Surgery · Transplantation</p>
-        <h1>Denys Fedorov</h1>
-        <p class="subtitle">HPB Surgeon · Liver Transplant Surgeon</p>
-        <p class="institution">National Scientific Center of Surgery and Transplantology named after O.O. Shalimov, Kyiv, Ukraine</p>
+        <p class="eyebrow" data-i18n="hero.eyebrow">Liver Surgery · HPB Surgery · Transplantation</p>
+        <h1 data-i18n="hero.name">Denys Fedorov</h1>
+        <p class="subtitle" data-i18n="hero.subtitle">HPB Surgeon · Liver Transplant Surgeon</p>
+        <p class="institution" data-i18n="hero.institution">National Scientific Center of Surgery and Transplantology named after O.O. Shalimov, Kyiv, Ukraine</p>
         <div class="cta-row">
-          <a class="button primary" href="#contact">Контакти</a>
-          <a class="button" href="vcard/denys-fedorov.vcf">Зберегти контакт</a>
-          <a class="button" href="https://youtube.com/@liversurgery" target="_blank" rel="noopener">YouTube</a>
+          <a class="button primary" href="#contact" data-i18n="hero.contactButton">Контакти</a>
+          <a class="button" href="vcard/denys-fedorov.vcf" data-i18n="hero.vcardButton">Зберегти контакт</a>
+          <a class="button" href="https://youtube.com/@liversurgery" target="_blank" rel="noopener" data-i18n="hero.youtubeButton">YouTube</a>
         </div>
       </div>
       <div class="hero-card" aria-label="Profile card">
-        <img src="img/profile-placeholder.svg" alt="Denys Fedorov profile placeholder" class="profile-photo" />
+        <img src="img/profile-placeholder.svg" alt="Denys Fedorov profile placeholder" class="profile-photo" data-i18n-attr="alt:hero.photoAlt" />
         <div class="card-note">
           <strong>fedorov.liver.surgery</strong>
-          <span>Personal professional hub</span>
+          <span data-i18n="hero.cardNote">Personal professional hub</span>
         </div>
       </div>
     </section>
 
     <section class="section" id="about">
       <div class="section-heading">
-        <p class="eyebrow">About</p>
-        <h2>Про мене</h2>
+        <p class="eyebrow" data-i18n="about.eyebrow">About</p>
+        <h2 data-i18n="about.title">Про мене</h2>
       </div>
-      <p class="lead">
+      <p class="lead" data-i18n="about.lead">
         Я гепатобіліарний хірург і трансплантолог, спеціалізуюся на хірургічному лікуванні пухлин печінки,
         лапароскопічних резекціях печінки та трансплантації печінки.
       </p>
-      <p>
+      <p data-i18n="about.text">
         Ця сторінка об’єднує контакти, професійні ресурси, освітні проєкти, відео операцій та наукові профілі.
-        Текст можна вільно змінити у файлі <code>docs/index.html</code>.
+        Основний контент редагується у файлі data/translations.json.
       </p>
     </section>
 
     <section class="section" id="expertise">
       <div class="section-heading">
-        <p class="eyebrow">Clinical expertise</p>
-        <h2>Клінічні напрями</h2>
+        <p class="eyebrow" data-i18n="expertise.eyebrow">Clinical expertise</p>
+        <h2 data-i18n="expertise.title">Клінічні напрями</h2>
       </div>
       <div class="grid cards">
-        <article class="card"><h3>Пухлини печінки</h3><p>Сучасна хірургічна тактика при первинних і метастатичних пухлинах печінки.</p></article>
-        <article class="card"><h3>Лапароскопічна хірургія</h3><p>Малоінвазивні резекції печінки, складні анатомічні та паренхімозберігаючі втручання.</p></article>
-        <article class="card"><h3>Трансплантація печінки</h3><p>Хірургічні аспекти трансплантації печінки та комплексне ведення пацієнтів.</p></article>
+        <article class="card">
+          <h3 data-i18n="expertise.liverTumors.title">Пухлини печінки</h3>
+          <p data-i18n="expertise.liverTumors.text">Сучасна хірургічна тактика при первинних і метастатичних пухлинах печінки.</p>
+        </article>
+        <article class="card">
+          <h3 data-i18n="expertise.laparoscopy.title">Лапароскопічна хірургія</h3>
+          <p data-i18n="expertise.laparoscopy.text">Малоінвазивні резекції печінки, складні анатомічні та паренхімозберігаючі втручання.</p>
+        </article>
+        <article class="card">
+          <h3 data-i18n="expertise.transplant.title">Трансплантація печінки</h3>
+          <p data-i18n="expertise.transplant.text">Хірургічні аспекти трансплантації печінки та комплексне ведення пацієнтів.</p>
+        </article>
       </div>
     </section>
 
     <section class="section" id="projects">
       <div class="section-heading">
-        <p class="eyebrow">Education</p>
-        <h2>Освітні ресурси та проєкти</h2>
+        <p class="eyebrow" data-i18n="projects.eyebrow">Education</p>
+        <h2 data-i18n="projects.title">Освітні ресурси та проєкти</h2>
       </div>
       <div class="link-list">
-        <a href="https://lap-book.liver.surgery" target="_blank" rel="noopener"><span>Книга</span><strong>Лапароскопічна хірургія печінки</strong></a>
-        <a href="https://youtube.com/@liversurgery" target="_blank" rel="noopener"><span>YouTube</span><strong>Хірургічні відео</strong></a>
-        <a href="https://t.me/foiegras_surgery" target="_blank" rel="noopener"><span>Telegram</span><strong>Foie Gras Surgery</strong></a>
+        <a href="https://lap-book.liver.surgery" target="_blank" rel="noopener">
+          <span data-i18n="projects.book.label">Книга</span>
+          <strong data-i18n="projects.book.title">Лапароскопічна хірургія печінки</strong>
+        </a>
+        <a href="https://youtube.com/@liversurgery" target="_blank" rel="noopener">
+          <span data-i18n="projects.youtube.label">YouTube</span>
+          <strong data-i18n="projects.youtube.title">Хірургічні відео</strong>
+        </a>
+        <a href="https://t.me/foiegras_surgery" target="_blank" rel="noopener">
+          <span data-i18n="projects.telegram.label">Telegram</span>
+          <strong data-i18n="projects.telegram.title">Foie Gras Surgery</strong>
+        </a>
       </div>
     </section>
 
     <section class="section" id="publications">
       <div class="section-heading">
-        <p class="eyebrow">Academic profiles</p>
-        <h2>Наукова діяльність</h2>
+        <p class="eyebrow" data-i18n="publications.eyebrow">Academic profiles</p>
+        <h2 data-i18n="publications.title">Наукова діяльність</h2>
       </div>
       <div class="button-row">
         <a class="button" href="#" target="_blank" rel="noopener">ORCID</a>
@@ -103,24 +129,33 @@
         <a class="button" href="#" target="_blank" rel="noopener">ResearchGate</a>
         <a class="button" href="#" target="_blank" rel="noopener">PubMed</a>
       </div>
-      <p class="muted">Замініть <code>#</code> на реальні посилання у файлі <code>docs/index.html</code>.</p>
+      <p class="muted" data-i18n="publications.note">Замініть # на реальні посилання у файлі index.html.</p>
     </section>
 
     <section class="section contact-section" id="contact">
       <div class="section-heading">
-        <p class="eyebrow">Contact</p>
-        <h2>Контакти</h2>
+        <p class="eyebrow" data-i18n="contact.eyebrow">Contact</p>
+        <h2 data-i18n="contact.title">Контакти</h2>
       </div>
       <div class="contact-grid">
-        <a class="contact-item" href="mailto:your.email@example.com"><span>Email</span><strong>your.email@example.com</strong></a>
-        <a class="contact-item" href="https://t.me/your_username" target="_blank" rel="noopener"><span>Telegram</span><strong>@your_username</strong></a>
-        <a class="contact-item" href="vcard/denys-fedorov.vcf"><span>vCard</span><strong>Зберегти контакт</strong></a>
+        <a class="contact-item" href="mailto:your.email@example.com">
+          <span>Email</span>
+          <strong>your.email@example.com</strong>
+        </a>
+        <a class="contact-item" href="https://t.me/your_username" target="_blank" rel="noopener">
+          <span>Telegram</span>
+          <strong>@your_username</strong>
+        </a>
+        <a class="contact-item" href="vcard/denys-fedorov.vcf">
+          <span>vCard</span>
+          <strong data-i18n="contact.vcard">Зберегти контакт</strong>
+        </a>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <p>© <span id="year"></span> Denys Fedorov. All rights reserved.</p>
+    <p>© <span id="year"></span> Denys Fedorov. <span data-i18n="footer.rights">All rights reserved.</span></p>
   </footer>
 
   <script src="js/main.js"></script>

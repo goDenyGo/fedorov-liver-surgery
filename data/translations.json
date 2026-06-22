@@ -1,0 +1,154 @@
+{
+  "uk": {
+    "meta": {
+      "title": "Денис Федоров | Гепатобіліарний хірург",
+      "description": "Денис Федоров — гепатобіліарний хірург, трансплантолог, лапароскопічна хірургія печінки, пухлини печінки, освітні проєкти та контакти."
+    },
+    "nav": {
+      "menu": "Меню",
+      "about": "Про мене",
+      "expertise": "Напрями",
+      "projects": "Проєкти",
+      "publications": "Наука",
+      "contact": "Контакти"
+    },
+    "hero": {
+      "eyebrow": "Хірургія печінки · HPB Surgery · Трансплантація",
+      "name": "Денис Федоров",
+      "subtitle": "Гепатобіліарний хірург · Трансплантолог",
+      "institution": "Національний науковий центр хірургії та трансплантології імені О.О. Шалімова, Київ, Україна",
+      "contactButton": "Контакти",
+      "vcardButton": "Зберегти контакт",
+      "youtubeButton": "YouTube",
+      "cardNote": "Персональний професійний хаб",
+      "photoAlt": "Профільне фото Дениса Федорова"
+    },
+    "about": {
+      "eyebrow": "About",
+      "title": "Про мене",
+      "lead": "Я гепатобіліарний хірург і трансплантолог, спеціалізуюся на хірургічному лікуванні пухлин печінки, лапароскопічних резекціях печінки та трансплантації печінки.",
+      "text": "Ця сторінка об’єднує контакти, професійні ресурси, освітні проєкти, відео операцій та наукові профілі. Основний контент редагується у файлі data/translations.json."
+    },
+    "expertise": {
+      "eyebrow": "Clinical expertise",
+      "title": "Клінічні напрями",
+      "liverTumors": {
+        "title": "Пухлини печінки",
+        "text": "Сучасна хірургічна тактика при первинних і метастатичних пухлинах печінки."
+      },
+      "laparoscopy": {
+        "title": "Лапароскопічна хірургія",
+        "text": "Малоінвазивні резекції печінки, складні анатомічні та паренхімозберігаючі втручання."
+      },
+      "transplant": {
+        "title": "Трансплантація печінки",
+        "text": "Хірургічні аспекти трансплантації печінки та комплексне ведення пацієнтів."
+      }
+    },
+    "projects": {
+      "eyebrow": "Education",
+      "title": "Освітні ресурси та проєкти",
+      "book": {
+        "label": "Книга",
+        "title": "Лапароскопічна хірургія печінки"
+      },
+      "youtube": {
+        "label": "YouTube",
+        "title": "Хірургічні відео"
+      },
+      "telegram": {
+        "label": "Telegram",
+        "title": "Foie Gras Surgery"
+      }
+    },
+    "publications": {
+      "eyebrow": "Academic profiles",
+      "title": "Наукова діяльність",
+      "note": "Замініть # на реальні посилання у файлі index.html."
+    },
+    "contact": {
+      "eyebrow": "Contact",
+      "title": "Контакти",
+      "vcard": "Зберегти контакт"
+    },
+    "footer": {
+      "rights": "Усі права захищені."
+    }
+  },
+  "en": {
+    "meta": {
+      "title": "Denys Fedorov | HPB Surgeon",
+      "description": "Denys Fedorov — HPB surgeon, liver transplant surgeon, laparoscopic liver surgery, liver tumors, educational projects and contacts."
+    },
+    "nav": {
+      "menu": "Menu",
+      "about": "About",
+      "expertise": "Expertise",
+      "projects": "Projects",
+      "publications": "Academic",
+      "contact": "Contacts"
+    },
+    "hero": {
+      "eyebrow": "Liver Surgery · HPB Surgery · Transplantation",
+      "name": "Denys Fedorov",
+      "subtitle": "HPB Surgeon · Liver Transplant Surgeon",
+      "institution": "National Scientific Center of Surgery and Transplantology named after O.O. Shalimov, Kyiv, Ukraine",
+      "contactButton": "Contacts",
+      "vcardButton": "Save contact",
+      "youtubeButton": "YouTube",
+      "cardNote": "Personal professional hub",
+      "photoAlt": "Denys Fedorov profile photo"
+    },
+    "about": {
+      "eyebrow": "About",
+      "title": "About",
+      "lead": "I am an HPB surgeon and liver transplant surgeon specializing in surgical treatment of liver tumors, laparoscopic liver resections and liver transplantation.",
+      "text": "This page brings together contacts, professional resources, educational projects, surgical videos and academic profiles. The main content can be edited in data/translations.json."
+    },
+    "expertise": {
+      "eyebrow": "Clinical expertise",
+      "title": "Clinical expertise",
+      "liverTumors": {
+        "title": "Liver tumors",
+        "text": "Modern surgical strategy for primary and metastatic liver tumors."
+      },
+      "laparoscopy": {
+        "title": "Laparoscopic liver surgery",
+        "text": "Minimally invasive liver resections, complex anatomical and parenchyma-sparing procedures."
+      },
+      "transplant": {
+        "title": "Liver transplantation",
+        "text": "Surgical aspects of liver transplantation and comprehensive patient care."
+      }
+    },
+    "projects": {
+      "eyebrow": "Education",
+      "title": "Educational resources and projects",
+      "book": {
+        "label": "Book",
+        "title": "Laparoscopic Liver Surgery"
+      },
+      "youtube": {
+        "label": "YouTube",
+        "title": "Surgical videos"
+      },
+      "telegram": {
+        "label": "Telegram",
+        "title": "Foie Gras Surgery"
+      }
+    },
+    "publications": {
+      "eyebrow": "Academic profiles",
+      "title": "Academic activity",
+      "note": "Replace # with real profile links in index.html."
+    },
+    "contact": {
+      "eyebrow": "Contact",
+      "title": "Contacts",
+      "vcard": "Save contact"
+    },
+    "footer": {
+      "rights": "All rights reserved."
+    }
+  }
+}
