@@ -1,2 +1,5 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# vCard requires CRLF, including after checkout.
+*.vcf text eol=crlf

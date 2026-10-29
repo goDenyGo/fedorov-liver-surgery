@@ -1,0 +1,389 @@
+{
+  "schemaVersion": 1,
+  "site": {
+    "url": "https://fedorov.liver.surgery",
+    "logoInitials": "DF",
+    "copyrightName": "Denys Fedorov"
+  },
+  "translations": {
+    "uk": {
+      "meta": {
+        "title": "Денис Федоров | Гепатобіліарний хірург",
+        "description": "Денис Федоров — гепатобіліарний хірург, трансплантолог, лапароскопічна хірургія печінки, пухлини печінки, освітні проєкти та контакти."
+      },
+      "nav": {
+        "menu": "Меню",
+        "about": "Про мене",
+        "expertise": "Напрями",
+        "projects": "Проєкти",
+        "publications": "Наука",
+        "contact": "Контакти"
+      },
+      "hero": {
+        "eyebrow": "Хірургія печінки · HPB Surgery · Трансплантація",
+        "name": "Денис Федоров",
+        "subtitle": "Гепатобіліарний хірург · Трансплантолог",
+        "institution": "Національний науковий центр хірургії та трансплантології імені О.О. Шалімова, Київ, Україна",
+        "contactButton": "Контакти",
+        "vcardButton": "Зберегти контакт",
+        "youtubeButton": "YouTube",
+        "cardNote": "Персональний професійний хаб",
+        "photoAlt": "Профільне фото Дениса Федорова"
+      },
+      "about": {
+        "eyebrow": "About",
+        "title": "Про мене",
+        "lead": "Я гепатобіліарний хірург і трансплантолог, спеціалізуюся на хірургічному лікуванні пухлин печінки, лапароскопічних резекціях печінки та трансплантації печінки.",
+        "text": null
+      },
+      "expertise": {
+        "eyebrow": "Clinical expertise",
+        "title": "Клінічні напрями",
+        "liverTumors": {
+          "title": "Пухлини печінки",
+          "text": "Сучасна хірургічна тактика при первинних і метастатичних пухлинах печінки."
+        },
+        "laparoscopy": {
+          "title": "Лапароскопічна хірургія",
+          "text": "Малоінвазивні резекції печінки, складні анатомічні та паренхімозберігаючі втручання."
+        },
+        "transplant": {
+          "title": "Трансплантація печінки",
+          "text": "Хірургічні аспекти трансплантації печінки та комплексне ведення пацієнтів."
+        }
+      },
+      "projects": {
+        "eyebrow": "Education",
+        "title": "Освітні ресурси та проєкти",
+        "book": {
+          "label": "Книга",
+          "title": "Лапароскопічна хірургія печінки"
+        },
+        "youtube": {
+          "label": "YouTube",
+          "title": "Хірургічні відео"
+        },
+        "telegram": {
+          "label": "Telegram",
+          "title": "Telegram спільнота хірургів"
+        }
+      },
+      "publications": {
+        "eyebrow": "Academic profiles",
+        "title": "Наукова діяльність",
+        "note": null
+      },
+      "contact": {
+        "eyebrow": "Contact",
+        "title": "Контакти",
+        "vcard": "Зберегти контакт",
+        "phone": "Телефон",
+        "telegram": "Написати мені в telegram",
+        "vcardTooltip": "Завантажити контакт у форматі vCard (.vcf)"
+      },
+      "footer": {
+        "rights": "Усі права захищені."
+      }
+    },
+    "en": {
+      "meta": {
+        "title": "Denys Fedorov | HPB Surgeon",
+        "description": "Denys Fedorov — HPB surgeon, liver transplant surgeon, laparoscopic liver surgery, liver tumors, educational projects and contacts."
+      },
+      "nav": {
+        "menu": "Menu",
+        "about": "About",
+        "expertise": "Expertise",
+        "projects": "Projects",
+        "publications": "Academic",
+        "contact": "Contacts"
+      },
+      "hero": {
+        "eyebrow": "Liver Surgery · HPB Surgery · Transplantation",
+        "name": "Denys Fedorov",
+        "subtitle": "HPB Surgeon · Liver Transplant Surgeon",
+        "institution": "National Scientific Center of Surgery and Transplantology named after O.O. Shalimov, Kyiv, Ukraine",
+        "contactButton": "Contacts",
+        "vcardButton": "Save contact",
+        "youtubeButton": "YouTube",
+        "cardNote": "Personal professional hub",
+        "photoAlt": "Denys Fedorov profile photo"
+      },
+      "about": {
+        "eyebrow": "About",
+        "title": "About",
+        "lead": "I am an HPB surgeon and liver transplant surgeon specializing in surgical treatment of liver tumors, laparoscopic liver resections and liver transplantation.",
+        "text": null
+      },
+      "expertise": {
+        "eyebrow": "Clinical expertise",
+        "title": "Clinical expertise",
+        "liverTumors": {
+          "title": "Liver tumors",
+          "text": "Modern surgical strategy for primary and metastatic liver tumors."
+        },
+        "laparoscopy": {
+          "title": "Laparoscopic liver surgery",
+          "text": "Minimally invasive liver resections, complex anatomical and parenchyma-sparing procedures."
+        },
+        "transplant": {
+          "title": "Liver transplantation",
+          "text": "Surgical aspects of liver transplantation and comprehensive patient care."
+        }
+      },
+      "projects": {
+        "eyebrow": "Education",
+        "title": "Educational resources and projects",
+        "book": {
+          "label": "Book",
+          "title": "Laparoscopic Liver Surgery"
+        },
+        "youtube": {
+          "label": "YouTube",
+          "title": "Surgical videos"
+        },
+        "telegram": {
+          "label": "Telegram",
+          "title": "Telegram community of surgeons"
+        }
+      },
+      "publications": {
+        "eyebrow": "Academic profiles",
+        "title": "Academic activity",
+        "note": null
+      },
+      "contact": {
+        "eyebrow": "Contact",
+        "title": "Contacts",
+        "vcard": "Save contact",
+        "phone": "Phone",
+        "telegram": "Message me on Telegram",
+        "vcardTooltip": "Download contact as vCard (.vcf)"
+      },
+      "footer": {
+        "rights": "All rights reserved."
+      }
+    }
+  },
+  "profile": {
+    "position": {
+      "uk": "Провідний науковий співробітник, гепатобіліарний хірург",
+      "en": "Lead Researcher, HPB Surgeon"
+    },
+    "department": {
+      "uk": "Відділ гепатобіліарної, вісцеральної і ендокринної хірургії та органної трансплантації",
+      "en": "Department of Hepatobiliary, Visceral and Endocrine Surgery and Organ Transplantation"
+    },
+    "academicDegree": {
+      "uk": "Кандидат медичних наук",
+      "en": "PhD"
+    },
+    "academicTitle": {
+      "uk": null,
+      "en": null
+    },
+    "city": {
+      "uk": "Київ",
+      "en": "Kyiv"
+    },
+    "country": {
+      "uk": "Україна",
+      "en": "Ukraine"
+    }
+  },
+  "assets": {
+    "portrait": "img/denys-fedorov-portrait.jpg",
+    "portraitCropNotes": "Denys Fedorov",
+    "socialPreview": "img/og-image.png",
+    "favicon": "img/favicon.svg"
+  },
+  "links": {
+    "book": "https://lap-book.liver.surgery",
+    "youtube": "https://youtube.com/@liversurgery",
+    "telegramChannel": "https://t.me/foiegras_surgery",
+    "orcid": "https://orcid.org/0000-0002-8231-6943",
+    "googleScholar": "https://scholar.google.com.ua/citations?user=aCyZ5_kAAAAJ&hl=ua",
+    "researchGate": "https://www.researchgate.net/profile/Denys-Fedorov",
+    "scopus": "https://www.scopus.com/authid/detail.uri?authorId=18434085100"
+  },
+  "contacts": {
+    "email": "fedorov.consultation@gmail.com",
+    "telegramUsername": "@fedorov_denys",
+    "telegramUrl": "https://t.me/fedorov_denys",
+    "phone": "+380 73 555 02 03"
+  },
+  "vcard": {
+    "path": {
+      "uk": "vcard/denys-fedorov-uk.vcf",
+      "en": "vcard/denys-fedorov-en.vcf"
+    },
+    "street": {
+      "uk": "вул. Академіка Шалімова, 30",
+      "en": "30, Akademika Shalimova St."
+    },
+    "city": {
+      "uk": "Київ",
+      "en": "Kyiv"
+    },
+    "region": null,
+    "postalCode": "03126",
+    "country": {
+      "uk": "Україна",
+      "en": "Ukraine"
+    },
+    "note": null
+  },
+  "editorial": {
+    "reviewedAt": "2026-10-29",
+    "timezone": "Europe/Kyiv",
+    "runtimeConnected": true,
+    "fieldStatus": {
+      "/site/url": "needs_confirmation",
+      "/site/logoInitials": "needs_confirmation",
+      "/site/copyrightName": "needs_confirmation",
+      "/translations/uk/meta/title": "needs_confirmation",
+      "/translations/uk/meta/description": "needs_confirmation",
+      "/translations/uk/nav/menu": "needs_confirmation",
+      "/translations/uk/nav/about": "needs_confirmation",
+      "/translations/uk/nav/expertise": "needs_confirmation",
+      "/translations/uk/nav/projects": "needs_confirmation",
+      "/translations/uk/nav/publications": "needs_confirmation",
+      "/translations/uk/nav/contact": "needs_confirmation",
+      "/translations/uk/hero/eyebrow": "needs_confirmation",
+      "/translations/uk/hero/name": "needs_confirmation",
+      "/translations/uk/hero/subtitle": "needs_confirmation",
+      "/translations/uk/hero/institution": "needs_confirmation",
+      "/translations/uk/hero/contactButton": "needs_confirmation",
+      "/translations/uk/hero/vcardButton": "needs_confirmation",
+      "/translations/uk/hero/youtubeButton": "needs_confirmation",
+      "/translations/uk/hero/cardNote": "needs_confirmation",
+      "/translations/uk/hero/photoAlt": "needs_confirmation",
+      "/translations/uk/about/eyebrow": "needs_confirmation",
+      "/translations/uk/about/title": "needs_confirmation",
+      "/translations/uk/about/lead": "needs_confirmation",
+      "/translations/uk/about/text": "omit",
+      "/translations/uk/expertise/eyebrow": "needs_confirmation",
+      "/translations/uk/expertise/title": "needs_confirmation",
+      "/translations/uk/expertise/liverTumors/title": "needs_confirmation",
+      "/translations/uk/expertise/liverTumors/text": "needs_confirmation",
+      "/translations/uk/expertise/laparoscopy/title": "needs_confirmation",
+      "/translations/uk/expertise/laparoscopy/text": "needs_confirmation",
+      "/translations/uk/expertise/transplant/title": "needs_confirmation",
+      "/translations/uk/expertise/transplant/text": "needs_confirmation",
+      "/translations/uk/projects/eyebrow": "needs_confirmation",
+      "/translations/uk/projects/title": "needs_confirmation",
+      "/translations/uk/projects/book/label": "needs_confirmation",
+      "/translations/uk/projects/book/title": "needs_confirmation",
+      "/translations/uk/projects/youtube/label": "needs_confirmation",
+      "/translations/uk/projects/youtube/title": "needs_confirmation",
+      "/translations/uk/projects/telegram/label": "needs_confirmation",
+      "/translations/uk/projects/telegram/title": "confirmed",
+      "/translations/uk/publications/eyebrow": "needs_confirmation",
+      "/translations/uk/publications/title": "needs_confirmation",
+      "/translations/uk/publications/note": "omit",
+      "/translations/uk/contact/eyebrow": "needs_confirmation",
+      "/translations/uk/contact/title": "needs_confirmation",
+      "/translations/uk/contact/vcard": "needs_confirmation",
+      "/translations/uk/footer/rights": "needs_confirmation",
+      "/translations/en/meta/title": "needs_confirmation",
+      "/translations/en/meta/description": "needs_confirmation",
+      "/translations/en/nav/menu": "needs_confirmation",
+      "/translations/en/nav/about": "needs_confirmation",
+      "/translations/en/nav/expertise": "needs_confirmation",
+      "/translations/en/nav/projects": "needs_confirmation",
+      "/translations/en/nav/publications": "needs_confirmation",
+      "/translations/en/nav/contact": "needs_confirmation",
+      "/translations/en/hero/eyebrow": "needs_confirmation",
+      "/translations/en/hero/name": "needs_confirmation",
+      "/translations/en/hero/subtitle": "needs_confirmation",
+      "/translations/en/hero/institution": "needs_confirmation",
+      "/translations/en/hero/contactButton": "needs_confirmation",
+      "/translations/en/hero/vcardButton": "needs_confirmation",
+      "/translations/en/hero/youtubeButton": "needs_confirmation",
+      "/translations/en/hero/cardNote": "needs_confirmation",
+      "/translations/en/hero/photoAlt": "needs_confirmation",
+      "/translations/en/about/eyebrow": "needs_confirmation",
+      "/translations/en/about/title": "needs_confirmation",
+      "/translations/en/about/lead": "needs_confirmation",
+      "/translations/en/about/text": "omit",
+      "/translations/en/expertise/eyebrow": "needs_confirmation",
+      "/translations/en/expertise/title": "needs_confirmation",
+      "/translations/en/expertise/liverTumors/title": "needs_confirmation",
+      "/translations/en/expertise/liverTumors/text": "needs_confirmation",
+      "/translations/en/expertise/laparoscopy/title": "needs_confirmation",
+      "/translations/en/expertise/laparoscopy/text": "needs_confirmation",
+      "/translations/en/expertise/transplant/title": "needs_confirmation",
+      "/translations/en/expertise/transplant/text": "needs_confirmation",
+      "/translations/en/projects/eyebrow": "needs_confirmation",
+      "/translations/en/projects/title": "needs_confirmation",
+      "/translations/en/projects/book/label": "needs_confirmation",
+      "/translations/en/projects/book/title": "needs_confirmation",
+      "/translations/en/projects/youtube/label": "needs_confirmation",
+      "/translations/en/projects/youtube/title": "needs_confirmation",
+      "/translations/en/projects/telegram/label": "needs_confirmation",
+      "/translations/en/projects/telegram/title": "confirmed",
+      "/translations/en/publications/eyebrow": "needs_confirmation",
+      "/translations/en/publications/title": "needs_confirmation",
+      "/translations/en/publications/note": "omit",
+      "/translations/en/contact/eyebrow": "needs_confirmation",
+      "/translations/en/contact/title": "needs_confirmation",
+      "/translations/en/contact/vcard": "needs_confirmation",
+      "/translations/en/footer/rights": "needs_confirmation",
+      "/profile/position/uk": "missing",
+      "/profile/position/en": "missing",
+      "/profile/department/uk": "missing",
+      "/profile/department/en": "missing",
+      "/profile/academicDegree/uk": "missing",
+      "/profile/academicDegree/en": "missing",
+      "/profile/academicTitle/uk": "missing",
+      "/profile/academicTitle/en": "missing",
+      "/profile/city/uk": "needs_confirmation",
+      "/profile/city/en": "needs_confirmation",
+      "/profile/country/uk": "needs_confirmation",
+      "/profile/country/en": "needs_confirmation",
+      "/assets/portrait": "missing",
+      "/assets/portraitCropNotes": "missing",
+      "/assets/socialPreview": "needs_confirmation",
+      "/assets/favicon": "needs_confirmation",
+      "/links/book": "needs_confirmation",
+      "/links/youtube": "needs_confirmation",
+      "/links/telegramChannel": "needs_confirmation",
+      "/links/orcid": "missing",
+      "/links/googleScholar": "missing",
+      "/links/researchGate": "missing",
+      "/contacts/email": "missing",
+      "/contacts/telegramUsername": "missing",
+      "/contacts/telegramUrl": "confirmed",
+      "/contacts/phone": "missing",
+      "/vcard/region": "missing",
+      "/vcard/postalCode": "needs_confirmation",
+      "/vcard/note": "missing",
+      "/links/scopus": "confirmed",
+      "/vcard/path/uk": "needs_confirmation",
+      "/vcard/path/en": "needs_confirmation",
+      "/vcard/street/uk": "needs_confirmation",
+      "/vcard/street/en": "needs_confirmation",
+      "/vcard/city/uk": "needs_confirmation",
+      "/vcard/city/en": "needs_confirmation",
+      "/vcard/country/uk": "needs_confirmation",
+      "/vcard/country/en": "needs_confirmation",
+      "/translations/uk/contact/phone": "confirmed",
+      "/translations/en/contact/phone": "confirmed",
+      "/translations/uk/contact/telegram": "confirmed",
+      "/translations/en/contact/telegram": "confirmed",
+      "/translations/uk/contact/vcardTooltip": "confirmed",
+      "/translations/en/contact/vcardTooltip": "confirmed"
+    },
+    "checklist": {
+      "identityConfirmed": false,
+      "imagesApproved": false,
+      "biographyAndExpertiseApproved": false,
+      "resourcesConfirmed": false,
+      "academicProfilesResolved": false,
+      "contactsAndVcardApproved": false,
+      "bothLanguagesApproved": false,
+      "appliedToSite": false,
+      "browserAndVcardChecked": false
+    }
+  }
+}

@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /vcard/
+Disallow: /data/site-content.json
+Disallow: /data/CONTENT-BRIEF.md
+Disallow: /HANDSOFF.md

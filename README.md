@@ -1,100 +1,56 @@
 # fedorov.liver.surgery
 
-Static bilingual personal website for GitHub Pages.
+Статичний двомовний сайт для GitHub Pages. Єдине джерело контенту —
+[data/site-content.json](data/site-content.json). Редагуйте тексти, контакти,
+посилання та шляхи до зображень лише в цьому файлі. Інструкція полів:
+[data/CONTENT-BRIEF.md](data/CONTENT-BRIEF.md).
 
-## Structure
+## Локальний перегляд
 
-```text
-fedorov-liver-surgery/
-├── README.md
-├── index.html
-├── CNAME
-├── css/
-│   └── style.css
-├── js/
-│   └── main.js
-├── data/
-│   └── translations.json
-├── img/
-│   ├── favicon.svg
-│   ├── profile-placeholder.svg
-│   └── og-image.png
-├── pdf/
-└── vcard/
-    └── denys-fedorov.vcf
-```
-
-## How bilingual mode works
-
-The website uses one `index.html` and one translation file:
-
-```text
-data/translations.json
-```
-
-The language switcher is controlled by JavaScript in:
-
-```text
-js/main.js
-```
-
-Text blocks in `index.html` are marked like this:
-
-```html
-<h2 data-i18n="about.title">Про мене</h2>
-```
-
-The key `about.title` is taken from `data/translations.json`.
-
-## How to edit text
-
-Most visible text should be edited in:
-
-```text
-data/translations.json
-```
-
-There are two sections:
-
-```json
-"uk": { ... }
-"en": { ... }
-```
-
-Edit both language versions and push changes to GitHub.
-
-## Local preview
-
-Do not open `index.html` directly as a file, because translation loading uses `fetch()`.
-
-Run a local server from the project folder:
-
-```bash
+```sh
 python3 -m http.server 8000
 ```
 
-Then open:
+Відкрийте http://localhost:8000. Після збереження JSON оновіть сторінку.
+Не відкривайте index.html як file://: потрібні HTTP та JavaScript.
 
-```text
-http://localhost:8000
+## Дані та мови
+
+`js/main.js` читає анкету з cache:no-store, заповнює сторінку й метадані,
+застосовує translations.uk/en та запам’ятовує мову. Окремого translations.json
+більше немає. null/порожні значення приховують відповідні елементи; статус
+omit для текстового поля також приховує його. needs_confirmation — редакційна
+позначка, вона не заважає показувати наявне значення. Службові editorial дані
+не відображаються. Видалені раніше абзаци не повертаються.
+
+Ім’я, спеціальність та установа показуються у поточних секціях. Додаткові
+profile-поля використовуються у vCard; нових біографічних секцій не додано.
+Телефон та робоча адреса залишаються лише у vCard. Контакти мають data-nosnippet;
+robots.txt обмежує обхід анкети й карток добровільними правилами.
+
+## vCard
+
+Обидві кнопки генерують актуальну UA/EN vCard безпосередньо з завантаженої
+анкети через `js/vcard.js`. Їх не потрібно перегенеровувати вручну після змін
+JSON. Картки містять локалізовані ім’я, посаду, установу/відділ, email, телефон,
+сайт, Telegram, ступінь та адресу. Імпорт у контактні програми слід перевірити
+на цільових пристроях.
+
+Статичні `vcard/*.vcf` залишено для сумісності старих прямих посилань. Лише ці
+копії оновлюються окремою командою (кнопки сайту їх не використовують):
+
+```sh
+node scripts/generate-vcards.mjs
 ```
 
-## Publishing to GitHub Pages
+## Публікація
 
-If GitHub Pages is configured to publish from `main` and `/root`, push changes:
+Сайт лишається статичним, build step не потрібен. Публікуйте код, JSON та
+зображення через чинне налаштування GitHub Pages; CNAME задає домен.
+Локальна зміна JSON не публікується сама до push. Публічна анкета та vCard
+доступні за URL: robots.txt/data-nosnippet не є контролем доступу.
 
-```bash
-git add .
-git commit -m "Update bilingual website"
-git push
-```
-
-If your Pages settings use `/docs`, move the site files into a `docs/` folder or change GitHub Pages settings to `/root`.
-
-## Custom domain
-
-The `CNAME` file contains:
-
-```text
-fedorov.liver.surgery
-```
+Telegram спільноти в освітніх ресурсах і особистий Telegram у контактах
+мають різні UA/EN підписи в анкеті. Зовнішні посилання мають локальні SVG
+логотипи сервісів у `img/icons`; для книги й email використано піктограми.
+Джерела іконок зазначено в `img/icons/README.md`.

@@ -1,0 +1,15 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Fedorov;Denys;;;
+FN:Denys Fedorov
+TITLE:Lead Researcher\, HPB Surgeon
+ORG:National Scientific Center of Surgery and Transplantology named after O
+ .O. Shalimov;Department of Hepatobiliary\, Visceral and Endocrine Surgery
+  and Organ Transplantation
+URL:https://fedorov.liver.surgery
+EMAIL;TYPE=INTERNET,WORK:fedorov.consultation@gmail.com
+TEL;TYPE=WORK,VOICE:+380735550203
+ADR;TYPE=WORK:;;30\, Akademika Shalimova St.;Kyiv;;03126;Ukraine
+URL:https://t.me/fedorov_denys
+NOTE:PhD
+END:VCARD

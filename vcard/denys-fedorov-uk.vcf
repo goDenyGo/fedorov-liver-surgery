@@ -1,0 +1,19 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Федоров;Денис;;;
+FN:Денис Федоров
+TITLE:Провідний науковий співробітник\, геп
+ атобіліарний хірург
+ORG:Національний науковий центр хірургії
+  та трансплантології імені О.О. Шалімова;
+ Відділ гепатобіліарної\, вісцеральної і
+  ендокринної хірургії та органної транс
+ плантації
+URL:https://fedorov.liver.surgery
+EMAIL;TYPE=INTERNET,WORK:fedorov.consultation@gmail.com
+TEL;TYPE=WORK,VOICE:+380735550203
+ADR;TYPE=WORK:;;вул. Академіка Шалімова\, 30;Київ;;
+ 03126;Україна
+URL:https://t.me/fedorov_denys
+NOTE:Кандидат медичних наук
+END:VCARD
