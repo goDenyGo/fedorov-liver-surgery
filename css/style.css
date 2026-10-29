@@ -150,10 +150,10 @@ h3 { font-size: 1.25rem; }
   .link-list a, .contact-item { flex-direction: column; align-items: flex-start; }
 }
 
-.service-icon { width: 22px; height: 22px; flex: 0 0 22px; object-fit: contain; }
-.button:has(.service-icon) { display: inline-flex; align-items: center; gap: 9px; }
+.service-icon { width: 30px; height: 30px; flex: 0 0 30px; object-fit: contain; }
+.button:has(.service-icon) { display: inline-flex; align-items: center; gap: 11px; }
 .link-list a:has(.service-icon), .contact-item:has(.service-icon) { justify-content: flex-start; align-items: center; flex-direction: row; }
 .resource-copy { min-width: 0; display: flex; flex-direction: column; gap: 3px; }
 .resource-copy strong { overflow-wrap: anywhere; }
-.contacts-icon { width: 28px; height: 28px; flex-basis: 28px; }
+.contacts-icon { width: 36px; height: 36px; flex-basis: 36px; }
 .contact-item[data-vcard] { justify-content: flex-start; align-items: center; flex-direction: row; }
