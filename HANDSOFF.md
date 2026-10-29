@@ -101,3 +101,9 @@ js/vcard.js — спільний генератор браузера/Node. Кн�
 Власник явно доручив зберегти й опублікувати всі погоджені зміни. Перед комітом перевірено актуальні HANDSOFF/README/ARCHITECTURE, git status/main/log, origin = goDenyGo/fedorov-liver-surgery; git fetch origin main, HEAD...origin/main = 0/0. node --test test/content.test.mjs 3/3; node --check main.js/vcard.js/generate-vcards.mjs; regenerate legacy vCards; HTML/JSON local assets та SVG XML validation, git diff --check pass. До коміту включаються лише сайт, погоджена публічна анкета, портрет/локальні іконки, картки, генератор/тести та документація; сервер консультацій не змінено.
 
 Наступна дія: commit і push origin main, потім звірка публічного HTTPS сайту з локальними файлами. Факт push/deployment треба підтвердити нижче або через git/HTTP. Відомі обмеження: JS-only metadata/OG для роботів без JS, відсутність перевірки імпорту Contacts; browser API останніх кроків недоступний. Дані анкети публічні, robots.txt не контроль доступу.
+
+### Результат публікації
+
+Основний коміт `7789c2e` успішно push у origin/main. GitHub Actions `pages build and deployment`, run 40872103032, завершився completed/success (підтверджено публічним GitHub API). Публікація коду підтверджена.
+
+Прямі curl HTTPS-запити до fedorov.liver.surgery відхилені: SSL certificate subject name не відповідає домену. Перевірку TLS не вимикали. Через це відповідність файлів на власному домені та роботу сайту після deployment не підтверджено; потрібна окрема перевірка DNS/custom domain/сертифіката GitHub Pages. Не стверджувати, що HTTPS домену справний. Наступний крок: перевірити домен у Settings → Pages та чинний DNS/HTTPS; не змінювати DNS навмання. Цей документаційний запис зберігається окремим комітом після основної публікації.
