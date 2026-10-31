@@ -173,3 +173,19 @@ git diff --check. Браузер IAB: UA → EN, повний текст і по
 мовні посилання, fallback меню. EN vCard реально завантажено через кнопку.
 Звуження viewport скинуто. Імпорт у Contacts не перевірявся.
 Перед публікацією git diff --check і повторні тести/build пройшли.
+
+Основний коміт 4db081c push origin/main успішний. Pages API підтвердив
+build_type=workflow, домен fedorov.liver.surgery збережений. Запит перемикання
+повернув порожню успішну відповідь (локальний JSON-parser помилився на порожньому
+body; наступний GET підтвердив фактичний результат). Новий workflow run 41184191647
+стартував, на останній перевірці in_progress. Наступний крок — перевірка success
+і опублікованого артефакту; ще не вважати deployment перевіреним.
+
+Публікація підтверджена: workflow 41184191647 — completed/success. Через HTTPS із
+перевіркою TLS побайтово звірено /, /uk/, /en/, sitemap.xml, robots.txt, обидві
+vCard і OG image з локальним dist. /data/site-content.json, /HANDSOFF.md та
+/templates/page.html повертають 404. Live UA відкрито в браузері: текст/портрет/
+посилання відображаються. Додано явне CSS [hidden], щоб omit/null елементи не
+відображалися через display:flex стилі кнопок. Посилання документації перевірено.
+Наступний крок: звичайне редагування JSON і push у main; генерація автоматична.
+Google Search Console, реальні Contacts import і час індексації не перевірені.
