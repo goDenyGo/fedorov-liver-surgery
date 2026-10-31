@@ -8,8 +8,8 @@
   "translations": {
     "uk": {
       "meta": {
-        "title": "Денис Федоров | Гепатобіліарний хірург",
-        "description": "Денис Федоров — гепатобіліарний хірург, трансплантолог, лапароскопічна хірургія печінки, пухлини печінки, освітні проєкти та контакти."
+        "title": "Денис Федоров — гепатобіліарний хірург і трансплантолог",
+        "description": "Хірургія пухлин печінки, лапароскопічні резекції та трансплантація печінки. Професійна сторінка Дениса Федорова: напрями роботи, освітні ресурси й контакти."
       },
       "nav": {
         "menu": "Меню",
@@ -87,8 +87,8 @@
     },
     "en": {
       "meta": {
-        "title": "Denys Fedorov | HPB Surgeon",
-        "description": "Denys Fedorov — HPB surgeon, liver transplant surgeon, laparoscopic liver surgery, liver tumors, educational projects and contacts."
+        "title": "Denys Fedorov — HPB and Liver Transplant Surgeon",
+        "description": "Liver tumor surgery, laparoscopic liver resections and liver transplantation. Denys Fedorov’s professional website: clinical expertise, educational resources and contacts."
       },
       "nav": {
         "menu": "Menu",
@@ -241,8 +241,8 @@
       "/site/url": "needs_confirmation",
       "/site/logoInitials": "needs_confirmation",
       "/site/copyrightName": "needs_confirmation",
-      "/translations/uk/meta/title": "needs_confirmation",
-      "/translations/uk/meta/description": "needs_confirmation",
+      "/translations/uk/meta/title": "confirmed",
+      "/translations/uk/meta/description": "confirmed",
       "/translations/uk/nav/menu": "needs_confirmation",
       "/translations/uk/nav/about": "needs_confirmation",
       "/translations/uk/nav/expertise": "needs_confirmation",
@@ -285,8 +285,8 @@
       "/translations/uk/contact/title": "needs_confirmation",
       "/translations/uk/contact/vcard": "needs_confirmation",
       "/translations/uk/footer/rights": "needs_confirmation",
-      "/translations/en/meta/title": "needs_confirmation",
-      "/translations/en/meta/description": "needs_confirmation",
+      "/translations/en/meta/title": "confirmed",
+      "/translations/en/meta/description": "confirmed",
       "/translations/en/nav/menu": "needs_confirmation",
       "/translations/en/nav/about": "needs_confirmation",
       "/translations/en/nav/expertise": "needs_confirmation",
@@ -343,7 +343,7 @@
       "/profile/country/en": "needs_confirmation",
       "/assets/portrait": "missing",
       "/assets/portraitCropNotes": "missing",
-      "/assets/socialPreview": "needs_confirmation",
+      "/assets/socialPreview": "confirmed",
       "/assets/favicon": "needs_confirmation",
       "/links/book": "needs_confirmation",
       "/links/youtube": "needs_confirmation",

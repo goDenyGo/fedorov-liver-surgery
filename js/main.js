@@ -110,6 +110,7 @@ function updateMeta(translations) {
     document.title = title;
     const ogTitle = document.querySelector('meta[property="og:title"]');
     if (ogTitle) ogTitle.setAttribute('content', title);
+    document.querySelector('meta[name="twitter:title"]')?.setAttribute('content', title);
   }
 
   if (description) {
@@ -117,6 +118,7 @@ function updateMeta(translations) {
     const ogDescription = document.querySelector('meta[property="og:description"]');
     if (metaDescription) metaDescription.setAttribute('content', description);
     if (ogDescription) ogDescription.setAttribute('content', description);
+    document.querySelector('meta[name="twitter:description"]')?.setAttribute('content', description);
   }
 }
 
@@ -124,6 +126,7 @@ function applyTranslations(language, allTranslations) {
   const translations = allTranslations[language] || allTranslations[defaultLanguage];
 
   document.documentElement.lang = language;
+  document.querySelector('meta[property="og:locale"]')?.setAttribute('content', language === 'en' ? 'en_US' : 'uk_UA');
   updateVcardLinks(language);
   updateMeta(translations);
 

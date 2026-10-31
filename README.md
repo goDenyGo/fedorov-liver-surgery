@@ -45,7 +45,18 @@ node scripts/generate-vcards.mjs
 
 ## Публікація
 
-Сайт лишається статичним, build step не потрібен. Публікуйте код, JSON та
+Сайт лишається статичним. Після зміни метаданих або socialPreview в JSON
+оновіть статичні теги для роботів без JavaScript:
+
+```sh
+node scripts/generate-metadata.mjs
+node scripts/generate-metadata.mjs --check
+```
+
+Генератор записує український title, description, Open Graph, Twitter Card і
+canonical у head index.html. Картинка прев’ю — img/og-image.png, 1200×630.
+У браузері UA/EN заголовки й описи перемикаються як раніше.
+Публікуйте код, JSON та
 зображення через чинне налаштування GitHub Pages; CNAME задає домен.
 Локальна зміна JSON не публікується сама до push. Публічна анкета та vCard
 доступні за URL: robots.txt/data-nosnippet не є контролем доступу.

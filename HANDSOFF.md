@@ -121,3 +121,20 @@ js/vcard.js — спільний генератор браузера/Node. Кн�
 На запит власника збільшено service-icon з 22 до 30 px, contacts-icon з 28 до 36 px; flex-basis узгоджений з розмірами, відступ у кнопках 11 px замість 9. Змінено лише CSS та цей журнал. Форми/палітра/контент не змінені. Перевірено очікувані CSS dimensions/flex-basis та git diff --check; браузерну візуальну перевірку не виконано. Наступна дія — commit/push і HTTPS звірка CSS; власник прямо авторизував публікацію.
 
 Результат: коміт `a774884` push origin/main успішний. Після очікування Pages deployment публічний HTTPS CSS із cache-busting параметром побайтово збігається з локальним; нові 30/36 px розміри опубліковані. Фінальний статус Actions окремо не перевірявся. Результат збережено документаційним комітом.
+
+## Статичні метадані, 31.10.2026, Europe/Kyiv
+
+Власник авторизував внесення та публікацію OG. Заповнено погоджені за напрямом
+UA/EN meta в JSON із фактичними напрямами печінкової хірургії; використано
+наявну img/og-image.png 1200×630 (англомовна картка з ім’ям і спеціальністю,
+без портрета). scripts/generate-metadata.mjs генерує head для роботів без JS:
+title/description/author, OG із абсолютним image URL/alt/dimensions/locale,
+Twitter Card та canonical. main.js синхронізує локалізовані Twitter тексти
+й OG locale. README/ARCHITECTURE актуалізовано; попереднє JS-only OG обмеження
+усунено. Інші контакти й біографію не змінювали.
+
+Перевірено: node scripts/generate-metadata.mjs --check; node --test
+test/content.test.mjs — 3/3; node --check js/main.js; git diff --check.
+Картинку переглянуто через view_image. Реальний месенджерний preview і
+мобільний браузер не перевірені. Наступний крок: commit/push, дочекатися Pages
+і звірити публічні HTML/JSON/image через HTTPS.
