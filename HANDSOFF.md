@@ -147,3 +147,29 @@ img/og-image.png побайтово збігається з локальним. 
 Сторонні месенджери не перевірені; їхній старий кеш може лишатися.
 Наступний крок: за потреби перевірити прев’ю новим повідомленням у цільовому
 месенджері. Документаційний результат зберігається окремим комітом.
+
+## Прегенеровані сторінки, 31.10.2026, Europe/Kyiv
+
+Власник доручив перевести візитку на автоматичну генерацію HTML під час публікації.
+Додано templates/page.html, scripts/build.py (stdlib HTMLParser, escape/URL validation),
+workflow pages.yml: тести → build → Pages artifact/deploy. Вихідний index.html і старий
+генератор лише meta замінено шаблоном та повним генератором. dist/ ігнорується Git.
+Створюються /uk/, /en/, українська коренева копія, metadata/canonical/hreflang,
+sitemap/robots, актуальні UA/EN/legacy vCard. JSON/документація не копіюються в Pages.
+JS лише для мобільного меню; без JS контент/мови/контакти працюють, меню розгорнуте.
+Дані власника не переписані. README, ARCHITECTURE, CONTENT-BRIEF актуалізовано;
+створено docs/PUBLISHING.md із точним процесом і діагностикою.
+
+Перевірено локально: Python unittest 4/4 (обидві мови/метадані/URL/escape/omit/
+ресурси/відсутність джерел у dist), Node vCard test 1/1, build, node --check main.js,
+git diff --check. Браузер IAB: UA → EN, повний текст і портрет, мовні/контактні href.
+Налаштування Pages прочитано через API: build_type legacy, custom domain збережений.
+Наступний крок: завершити mobile/browser smoke, review, push; перемкнути Pages Source
+на workflow; дочекатися Actions success, звірити публічні сторінки та відсутність JSON.
+Реальні Contacts import, Google indexing і месенджерні preview не перевірялися.
+
+Браузерні перевірки завершено: desktop EN, 390px mobile EN, меню open/close;
+на окремому localhost із CSP script-src none — повний UA/EN текст, відкриті
+мовні посилання, fallback меню. EN vCard реально завантажено через кнопку.
+Звуження viewport скинуто. Імпорт у Contacts не перевірявся.
+Перед публікацією git diff --check і повторні тести/build пройшли.
