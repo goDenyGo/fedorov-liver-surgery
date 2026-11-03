@@ -120,8 +120,7 @@ h3 { font-size: 1.25rem; }
   box-shadow: var(--shadow);
 }
 .profile-photo { width: 100%; height: auto; border-radius: 24px; display: block; background: #ede8df; }
-.card-note { display: flex; flex-direction: column; gap: 4px; margin-top: 18px; }
-.card-note span, .muted { color: var(--muted); }
+.muted { color: var(--muted); }
 
 .section-heading { margin-bottom: 28px; }
 .grid { display: grid; gap: 18px; }

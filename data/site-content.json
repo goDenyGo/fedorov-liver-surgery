@@ -27,7 +27,7 @@
         "contactButton": "Контакти",
         "vcardButton": "Зберегти контакт",
         "youtubeButton": "YouTube",
-        "cardNote": "Персональний професійний хаб",
+        "cardNote": null,
         "photoAlt": "Профільне фото Дениса Федорова"
       },
       "about": {
@@ -106,7 +106,7 @@
         "contactButton": "Contacts",
         "vcardButton": "Save contact",
         "youtubeButton": "YouTube",
-        "cardNote": "Personal professional hub",
+        "cardNote": null,
         "photoAlt": "Denys Fedorov profile photo"
       },
       "about": {
@@ -167,7 +167,7 @@
   },
   "profile": {
     "position": {
-      "uk": "Провідний науковий співробітник, гепатобіліарний хірург",
+      "uk": "Гепатобіліарний хірург, ННЦХТ ім.Шалімова",
       "en": "Lead Researcher, HPB Surgeon"
     },
     "department": {
@@ -231,7 +231,11 @@
       "uk": "Україна",
       "en": "Ukraine"
     },
-    "note": null
+    "note": null,
+    "additionalName": {
+      "uk": "Олександрович",
+      "en": null
+    }
   },
   "editorial": {
     "reviewedAt": "2026-10-29",
@@ -256,7 +260,7 @@
       "/translations/uk/hero/contactButton": "needs_confirmation",
       "/translations/uk/hero/vcardButton": "needs_confirmation",
       "/translations/uk/hero/youtubeButton": "needs_confirmation",
-      "/translations/uk/hero/cardNote": "needs_confirmation",
+      "/translations/uk/hero/cardNote": "omit",
       "/translations/uk/hero/photoAlt": "needs_confirmation",
       "/translations/uk/about/eyebrow": "needs_confirmation",
       "/translations/uk/about/title": "needs_confirmation",
@@ -300,7 +304,7 @@
       "/translations/en/hero/contactButton": "needs_confirmation",
       "/translations/en/hero/vcardButton": "needs_confirmation",
       "/translations/en/hero/youtubeButton": "needs_confirmation",
-      "/translations/en/hero/cardNote": "needs_confirmation",
+      "/translations/en/hero/cardNote": "omit",
       "/translations/en/hero/photoAlt": "needs_confirmation",
       "/translations/en/about/eyebrow": "needs_confirmation",
       "/translations/en/about/title": "needs_confirmation",
@@ -329,7 +333,7 @@
       "/translations/en/contact/title": "needs_confirmation",
       "/translations/en/contact/vcard": "needs_confirmation",
       "/translations/en/footer/rights": "needs_confirmation",
-      "/profile/position/uk": "missing",
+      "/profile/position/uk": "confirmed",
       "/profile/position/en": "missing",
       "/profile/department/uk": "missing",
       "/profile/department/en": "missing",
@@ -372,7 +376,9 @@
       "/translations/uk/contact/telegram": "confirmed",
       "/translations/en/contact/telegram": "confirmed",
       "/translations/uk/contact/vcardTooltip": "confirmed",
-      "/translations/en/contact/vcardTooltip": "confirmed"
+      "/translations/en/contact/vcardTooltip": "confirmed",
+      "/vcard/additionalName/uk": "confirmed",
+      "/vcard/additionalName/en": "omit"
     },
     "checklist": {
       "identityConfirmed": false,

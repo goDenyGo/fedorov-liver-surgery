@@ -20,11 +20,13 @@ export function createVcard(content, language) {
   const profile = content.profile;
   const card = content.vcard;
   const name = hero.name.trim().split(/\s+/);
+  const additionalName = local(card.additionalName, language);
+  const fullName = [name[0], additionalName, ...name.slice(1)].filter(Boolean).join(' ');
   const organization = hero.institution.replace(/, (Київ, Україна|Kyiv, Ukraine)$/, '');
   const lines = [
     'BEGIN:VCARD', 'VERSION:3.0',
-    `N:${escapeText(name.slice(1).join(' '))};${escapeText(name[0])};;;`,
-    `FN:${escapeText(hero.name)}`,
+    `N:${escapeText(name.slice(1).join(' '))};${escapeText(name[0])};${escapeText(additionalName)};;`,
+    `FN:${escapeText(fullName)}`,
     `TITLE:${escapeText(profile.position[language] || hero.subtitle)}`,
     `ORG:${escapeText(organization)};${escapeText(profile.department[language])}`,
     `URL:${content.site.url}`,

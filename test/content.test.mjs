@@ -9,7 +9,10 @@ test('localized vCards keep UTF-8 folding and match current questionnaire',()=>{
   assert.ok(card.endsWith('END:VCARD\r\n'));
   for(const line of card.split('\r\n')) assert.ok(Buffer.byteLength(line)<=75);
   const unfolded=card.replaceAll('\r\n ','');
-  assert.ok(unfolded.includes('FN:'+content.translations[language].hero.name));
+  const name = content.translations[language].hero.name.split(' ');
+  const additional = content.vcard.additionalName?.[language] || '';
+  assert.ok(unfolded.includes(`N:${name.slice(1).join(' ')};${name[0]};${additional};;\r\n`));
+  assert.ok(unfolded.includes('FN:'+[name[0], additional, ...name.slice(1)].filter(Boolean).join(' ')));
   assert.ok(unfolded.includes(content.contacts.email));
  }
 });
