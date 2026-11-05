@@ -166,3 +166,39 @@ h3 { font-size: 1.25rem; }
   html:not(.js) .nav-menu { display: flex; position: static; width: 100%; box-shadow: none; }
   html:not(.js) .nav-toggle { display: none; }
 }
+
+.hero-summary { max-width: 36ch; }
+.cta-row { align-items: center; }
+.secondary-link { color: var(--accent-dark); font-weight: 700; text-underline-offset: 0.2em; }
+.visit-checklist { padding-inline-start: 1.5rem; }
+.visit-checklist li + li { margin-top: 0.5rem; }
+.booking-actions { margin-bottom: 24px; }
+
+.hero h1:lang(uk) { font-size: clamp(2.25rem, 7vw, 6rem); }
+
+.institution-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 14px 8px 8px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--card);
+  color: var(--accent-dark);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.35;
+  text-decoration: none;
+}
+
+.institution-link:hover span { text-decoration: underline; }
+.institution-link img { width: 44px; height: 44px; flex: 0 0 44px; }
+
+.direct-call {
+  min-height: 52px;
+  padding-inline: 24px;
+}
+
+@media (max-width: 820px) {
+  .booking-actions .button { width: 66%; text-align: center; }
+}

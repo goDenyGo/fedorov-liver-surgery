@@ -8,8 +8,8 @@
   "translations": {
     "uk": {
       "meta": {
-        "title": "Денис Федоров — гепатобіліарний хірург і трансплантолог",
-        "description": "Хірургія пухлин печінки, лапароскопічні резекції та трансплантація печінки. Професійна сторінка Дениса Федорова: напрями роботи, освітні ресурси й контакти."
+        "title": "Денис Федоров — хірург печінки, Київ | Консультація",
+        "description": "Консультація щодо пухлин печінки, лапароскопічних операцій і трансплантації. Як записатися до центру Шалімова в Києві та що взяти на прийом."
       },
       "nav": {
         "menu": "Меню",
@@ -17,31 +17,38 @@
         "expertise": "Напрями",
         "projects": "Проєкти",
         "publications": "Наука",
-        "contact": "Контакти"
+        "contact": "Контакти",
+        "patients": "Пацієнтам",
+        "label": "Основна навігація",
+        "home": "На головну",
+        "languages": "Вибір мови"
       },
       "hero": {
-        "eyebrow": "Хірургія печінки · HPB Surgery · Трансплантація",
+        "eyebrow": "Хірургія печінки",
         "name": "Денис Федоров",
+        "displayName": "Денис Олександрович Федоров",
         "subtitle": "Гепатобіліарний хірург · Трансплантолог",
-        "institution": "Національний науковий центр хірургії та трансплантології імені О.О. Шалімова, Київ, Україна",
-        "contactButton": "Контакти",
+        "institution": "ННЦХТ імені О.О.Шалімова, Київ",
+        "contactButton": "Отримати консультацію",
         "vcardButton": "Зберегти контакт",
         "youtubeButton": "YouTube",
         "cardNote": null,
-        "photoAlt": "Профільне фото Дениса Федорова"
+        "photoAlt": "Профільне фото Дениса Федорова",
+        "summary": "Консультація з приводу метастазів і первинних пухлин печінки та підшлункової залози."
       },
       "about": {
         "eyebrow": "About",
         "title": "Про мене",
-        "lead": "Я гепатобіліарний хірург і трансплантолог, спеціалізуюся на хірургічному лікуванні пухлин печінки, лапароскопічних резекціях печінки та трансплантації печінки.",
-        "text": null
+        "lead": "Я Денис Федоров, **гепатобіліарний хірург**, кандидат медичних наук і провідний науковий співробітник ННЦХТ імені О.О. Шалімова в Києві.",
+        "text": "Мій основний напрям — хірургічне лікування **первинних злоякісних пухлин і метастазів у печінці**. Також консультую пацієнтів із **доброякісними новоутвореннями печінки**, зокрема гемангіомами, аденомами та фокальною нодулярною гіперплазією. Виконую **лапароскопічні та відкриті резекції** печінки й підшлункової залози, а також втручання на інших органах гепатобіліарної зони. Консультую пацієнтів із пухлинами підшлункової залози.",
+        "consultation": "На консультації ми переглядаємо результати обстежень і обговорюємо, чи можна розглядати операцію у вашому випадку. Якщо для рішення потрібні додаткові обстеження або консультації інших фахівців, пояснюю, які саме й навіщо. Наприкінці обговорюємо наступний крок."
       },
       "expertise": {
         "eyebrow": "Clinical expertise",
         "title": "Клінічні напрями",
         "liverTumors": {
           "title": "Пухлини печінки",
-          "text": "Сучасна хірургічна тактика при первинних і метастатичних пухлинах печінки."
+          "text": "Первинні злоякісні пухлини печінки, зокрема гепатоцелюлярна карцинома та внутрішньопечінкова холангіокарцинома. Метастази в печінці, зокрема при раку ободової або прямої кишки."
         },
         "laparoscopy": {
           "title": "Лапароскопічна хірургія",
@@ -75,20 +82,36 @@
       },
       "contact": {
         "eyebrow": "Contact",
-        "title": "Контакти",
-        "vcard": "Зберегти контакт",
+        "title": "Як отримати консультацію",
+        "vcard": "Зберегти мій контакт в телефон",
         "phone": "Телефон",
-        "telegram": "Написати мені в telegram",
-        "vcardTooltip": "Завантажити контакт у форматі vCard (.vcf)"
+        "telegram": "Написати в Telegram",
+        "vcardTooltip": "Завантажити контакт у форматі vCard (.vcf)",
+        "booking": "Запишіться через реєстратуру поліклініки ННЦХТ імені О.О. Шалімова або домовтеся зі мною телефоном.",
+        "email": "Написати на пошту",
+        "inPerson": "Очна консультація в Києві",
+        "callCenter": "Записатись через поліклініку",
+        "remote": "Заочна консультація за документами",
+        "remoteIntro": "Коротко опишіть вашу ситуацію в Telegram або електронною поштою. Я підкажу, які документи й знімки надіслати.",
+        "callMe": "Зателефонувати мені"
       },
       "footer": {
         "rights": "Усі права захищені."
+      },
+      "patients": {
+        "title": "Як підготуватись до консультації",
+        "intro": "Зберіть матеріали обстежень і лікування, які вже маєте.",
+        "imaging": "**КТ і МРТ.** Підготуйте флешку або диск із повними знімками КТ чи МРТ (файли DICOM). Якщо їх немає, попросіть копію в центрі, де проходили обстеження.",
+        "records": "**Висновки й виписки.** Підготуйте оригінали або чіткі цифрові копії описів КТ і МРТ, виписок зі стаціонару, результатів аналізів та гістологічних висновків, якщо вони є.",
+        "questions": "**Інші дані.** Коротко зазначте, коли виявили проблему, яке лікування вже отримали та які ліки приймаєте зараз. Запишіть запитання до хірурга.",
+        "chronology": "За можливості розкладіть документи й дослідження за датами, від найдавніших до найновіших. У назвах цифрових файлів або папок зазначте дату й тип документа чи дослідження.",
+        "pathology": "**Гістологічні скельця й парафінові блоки.** Якщо вам робили біопсію або операцію, ці матеріали часто потрібні, щоб наші гістологи повторно переглянули зразки."
       }
     },
     "en": {
       "meta": {
-        "title": "Denys Fedorov — HPB and Liver Transplant Surgeon",
-        "description": "Liver tumor surgery, laparoscopic liver resections and liver transplantation. Denys Fedorov’s professional website: clinical expertise, educational resources and contacts."
+        "title": "Denys Fedorov — Liver Surgeon in Kyiv | Consultation",
+        "description": "Consultations on liver tumors, laparoscopic liver surgery and transplantation. How to book at the Shalimov Center in Kyiv and what to bring."
       },
       "nav": {
         "menu": "Menu",
@@ -96,31 +119,38 @@
         "expertise": "Expertise",
         "projects": "Projects",
         "publications": "Academic",
-        "contact": "Contacts"
+        "contact": "Contacts",
+        "patients": "For patients",
+        "label": "Main navigation",
+        "home": "Home",
+        "languages": "Language switcher"
       },
       "hero": {
-        "eyebrow": "Liver Surgery · HPB Surgery · Transplantation",
+        "eyebrow": "Liver surgery",
         "name": "Denys Fedorov",
+        "displayName": "Denys Fedorov",
         "subtitle": "HPB Surgeon · Liver Transplant Surgeon",
-        "institution": "National Scientific Center of Surgery and Transplantology named after O.O. Shalimov, Kyiv, Ukraine",
-        "contactButton": "Contacts",
+        "institution": "O.O. Shalimov National Scientific Center of Surgery and Transplantation, Kyiv",
+        "contactButton": "Get a consultation",
         "vcardButton": "Save contact",
         "youtubeButton": "YouTube",
         "cardNote": null,
-        "photoAlt": "Denys Fedorov profile photo"
+        "photoAlt": "Denys Fedorov profile photo",
+        "summary": "Consultations for metastases and primary tumors of the liver and pancreas."
       },
       "about": {
         "eyebrow": "About",
         "title": "About",
-        "lead": "I am an HPB surgeon and liver transplant surgeon specializing in surgical treatment of liver tumors, laparoscopic liver resections and liver transplantation.",
-        "text": null
+        "lead": "I am Denys Fedorov, a **hepatobiliary surgeon**, Candidate of Medical Sciences and Lead Researcher at the O.O. Shalimov National Scientific Center of Surgery and Transplantation in Kyiv.",
+        "text": "My main focus is surgery for **primary liver cancers and liver metastases**. I also see patients with **benign liver lesions**, including hemangiomas, adenomas and focal nodular hyperplasia. I perform **laparoscopic and open liver and pancreatic resections**, as well as other procedures in the hepatobiliary region. I also see patients with pancreatic tumors.",
+        "consultation": "During your consultation, we review your test results and discuss whether surgery may be an option for you. If further tests or specialist consultations are needed, I explain which ones and why. We then discuss the next step."
       },
       "expertise": {
         "eyebrow": "Clinical expertise",
         "title": "Clinical expertise",
         "liverTumors": {
           "title": "Liver tumors",
-          "text": "Modern surgical strategy for primary and metastatic liver tumors."
+          "text": "Primary liver cancers, including hepatocellular carcinoma and intrahepatic cholangiocarcinoma. Liver metastases, including those from colon or rectal cancer."
         },
         "laparoscopy": {
           "title": "Laparoscopic liver surgery",
@@ -154,14 +184,30 @@
       },
       "contact": {
         "eyebrow": "Contact",
-        "title": "Contacts",
-        "vcard": "Save contact",
+        "title": "How to get a consultation",
+        "vcard": "Save my contact to your phone",
         "phone": "Phone",
-        "telegram": "Message me on Telegram",
-        "vcardTooltip": "Download contact as vCard (.vcf)"
+        "telegram": "Message on Telegram",
+        "vcardTooltip": "Download contact as vCard (.vcf)",
+        "booking": "Book through the Shalimov Center outpatient clinic or call me directly to arrange an appointment.",
+        "email": "Send an email",
+        "inPerson": "In-person consultation in Kyiv",
+        "callCenter": "Book through the clinic",
+        "remote": "Remote review of medical records",
+        "remoteIntro": "Briefly describe your situation on Telegram or by email. I’ll let you know which records and scans to send.",
+        "callMe": "Call me"
       },
       "footer": {
         "rights": "All rights reserved."
+      },
+      "patients": {
+        "title": "How to prepare for your consultation",
+        "intro": "Gather the records and imaging you already have.",
+        "imaging": "**CT and MRI.** Prepare a USB drive or disc with the complete CT or MRI scans (DICOM files). If you don’t have them, ask the imaging center for a copy.",
+        "records": "**Reports and discharge summaries.** Prepare originals or clear digital copies of CT and MRI reports, hospital discharge summaries, lab results and any pathology reports.",
+        "questions": "**Other details.** Note when the problem was found, what treatment you have received and what medications you currently take. Write down any questions for the surgeon.",
+        "chronology": "If possible, arrange your records and scans by date, from oldest to newest. Include the date and the type of document or scan in each digital file or folder name.",
+        "pathology": "**Pathology slides and paraffin blocks.** If you’ve had a biopsy or surgery, our pathologists often need these materials to review your samples."
       }
     }
   },
@@ -192,6 +238,7 @@
     }
   },
   "assets": {
+    "institutionLogo": "img/shalimov-center-nsc.png",
     "portrait": "img/denys-fedorov-portrait.jpg",
     "portraitCropNotes": "Denys Fedorov",
     "socialPreview": "img/og-image.png",
@@ -204,13 +251,15 @@
     "orcid": "https://orcid.org/0000-0002-8231-6943",
     "googleScholar": "https://scholar.google.com.ua/citations?user=aCyZ5_kAAAAJ&hl=ua",
     "researchGate": "https://www.researchgate.net/profile/Denys-Fedorov",
-    "scopus": "https://www.scopus.com/authid/detail.uri?authorId=18434085100"
+    "scopus": "https://www.scopus.com/authid/detail.uri?authorId=18434085100",
+    "center": "https://www.surgery.org.ua/"
   },
   "contacts": {
     "email": "fedorov.consultation@gmail.com",
     "telegramUsername": "@fedorov_denys",
     "telegramUrl": "https://t.me/fedorov_denys",
-    "phone": "+380 73 555 02 03"
+    "phone": "+380735550203",
+    "centerTel": "tel:+380800333911"
   },
   "vcard": {
     "path": {
@@ -265,7 +314,7 @@
       "/translations/uk/about/eyebrow": "needs_confirmation",
       "/translations/uk/about/title": "needs_confirmation",
       "/translations/uk/about/lead": "needs_confirmation",
-      "/translations/uk/about/text": "omit",
+      "/translations/uk/about/text": "confirmed",
       "/translations/uk/expertise/eyebrow": "needs_confirmation",
       "/translations/uk/expertise/title": "needs_confirmation",
       "/translations/uk/expertise/liverTumors/title": "needs_confirmation",
@@ -309,7 +358,7 @@
       "/translations/en/about/eyebrow": "needs_confirmation",
       "/translations/en/about/title": "needs_confirmation",
       "/translations/en/about/lead": "needs_confirmation",
-      "/translations/en/about/text": "omit",
+      "/translations/en/about/text": "confirmed",
       "/translations/en/expertise/eyebrow": "needs_confirmation",
       "/translations/en/expertise/title": "needs_confirmation",
       "/translations/en/expertise/liverTumors/title": "needs_confirmation",
@@ -358,7 +407,7 @@
       "/contacts/email": "missing",
       "/contacts/telegramUsername": "missing",
       "/contacts/telegramUrl": "confirmed",
-      "/contacts/phone": "missing",
+      "/contacts/phone": "confirmed",
       "/vcard/region": "missing",
       "/vcard/postalCode": "needs_confirmation",
       "/vcard/note": "missing",

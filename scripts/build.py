@@ -64,7 +64,7 @@ def safe_url(raw, base):
     if not isinstance(raw, str) or not raw or any(ord(c) < 32 for c in raw):
         raise ValueError('Missing or invalid URL')
     url = urljoin(base, raw)
-    if urlparse(url).scheme not in ('https', 'http', 'mailto'):
+    if urlparse(url).scheme not in ('https', 'http', 'mailto', 'tel'):
         raise ValueError('Unsupported URL protocol')
     return raw if raw.startswith(('/', '#')) or urlparse(raw).scheme else '/' + raw
 
@@ -109,6 +109,15 @@ def render(content, template, language):
         if path:
             text = value(content, f'translations.{language}.{path}')
             node.children = [str(text)] if text else []
+            if text and 'data-allow-strong' in a:
+                parts = text.split('**')
+                if len(parts) % 2 == 0:
+                    raise ValueError(f'Unclosed emphasis in {language}.{path}')
+                node.children = parts
+                for index in range(1, len(parts), 2):
+                    strong = Element('strong')
+                    strong.children = [parts[index]]
+                    node.children[index] = strong
             if not text:
                 a['hidden'] = None
         path = a.get('data-content')

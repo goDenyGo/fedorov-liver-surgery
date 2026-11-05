@@ -10,11 +10,11 @@
 </head>
 <body>
   <header class="site-header">
-    <nav class="nav" aria-label="Main navigation">
-      <a class="logo" href="#top" aria-label="Home" data-content="site.logoInitials"></a>
+    <nav class="nav" data-i18n-attr="aria-label:nav.label">
+      <a class="logo" href="#top" data-i18n-attr="aria-label:nav.home" data-content="site.logoInitials"></a>
 
       <div class="nav-actions">
-        <div class="language-switcher" aria-label="Language switcher">
+        <div class="language-switcher" data-i18n-attr="aria-label:nav.languages">
           <a class="lang-button" data-lang-switch="uk" href="/uk/" hreflang="uk" lang="uk" aria-label="Українська">UA</a>
           <a class="lang-button" data-lang-switch="en" href="/en/" hreflang="en" lang="en" aria-label="English">EN</a>
         </div>
@@ -22,11 +22,12 @@
       </div>
 
       <div class="nav-menu" id="nav-menu">
+        <a href="#patients" data-i18n="nav.patients"></a>
         <a href="#about" data-i18n="nav.about"></a>
         <a href="#expertise" data-i18n="nav.expertise"></a>
+        <a href="#contact" data-i18n="nav.contact"></a>
         <a href="#projects" data-i18n="nav.projects"></a>
         <a href="#publications" data-i18n="nav.publications"></a>
-        <a href="#contact" data-i18n="nav.contact"></a>
       </div>
     </nav>
   </header>
@@ -35,31 +36,53 @@
     <section class="hero section">
       <div class="hero-content">
         <p class="eyebrow" data-i18n="hero.eyebrow"></p>
-        <h1 data-i18n="hero.name"></h1>
+        <h1 data-i18n="hero.displayName"></h1>
         <p class="subtitle" data-i18n="hero.subtitle"></p>
-        <p class="institution" data-i18n="hero.institution"></p>
+        <p class="institution">
+          <a class="institution-link" data-content-attr="href:links.center">
+            <img data-content-attr="src:assets.institutionLogo" width="501" height="501" alt="" />
+            <span data-i18n="hero.institution"></span>
+          </a>
+        </p>
+        <p class="hero-summary" data-i18n="hero.summary"></p>
         <div class="cta-row">
           <a class="button primary" href="#contact" data-i18n="hero.contactButton"></a>
-          <a class="button" data-vcard download rel="nofollow" data-i18n-attr="title:contact.vcardTooltip"><img class="service-icon contacts-icon" src="img/icons/contacts.svg" width="28" height="28" alt="" aria-hidden="true" /><span data-i18n="hero.vcardButton"></span></a>
-          <a class="button" data-content-attr="href:links.youtube" target="_blank" rel="noopener"><img class="service-icon" src="img/icons/youtube.svg" width="22" height="22" alt="" aria-hidden="true" /><span data-i18n="hero.youtubeButton"></span></a>
+          <a class="secondary-link" href="#patients" data-i18n="patients.title"></a>
         </div>
       </div>
-      <div class="hero-card" aria-label="Profile card">
+      <div class="hero-card">
         <img data-content-attr="src:assets.portrait" width="1200" height="1500" alt="" class="profile-photo" data-i18n-attr="alt:hero.photoAlt" />
+      </div>
+    </section>
+
+    <section class="section" id="patients">
+      <div class="section-heading">
+        <h2 data-i18n="patients.title"></h2>
+      </div>
+      <p class="lead" data-i18n="patients.intro"></p>
+      <ul class="visit-checklist">
+        <li data-i18n="patients.imaging" data-allow-strong></li>
+        <li data-i18n="patients.records" data-allow-strong></li>
+        <li data-i18n="patients.pathology" data-allow-strong></li>
+        <li data-i18n="patients.questions" data-allow-strong></li>
+      </ul>
+      <p data-i18n="patients.chronology"></p>
+      <div class="cta-row">
+        <a class="button primary" href="#contact" data-i18n="hero.contactButton"></a>
       </div>
     </section>
 
     <section class="section" id="about">
       <div class="section-heading">
-        <p class="eyebrow" data-i18n="about.eyebrow"></p>
         <h2 data-i18n="about.title"></h2>
       </div>
-      <p class="lead" data-i18n="about.lead"></p>
+      <p class="lead" data-i18n="about.lead" data-allow-strong></p>
+      <p class="lead" data-i18n="about.text" data-allow-strong></p>
+      <p class="lead" data-i18n="about.consultation"></p>
     </section>
 
     <section class="section" id="expertise">
       <div class="section-heading">
-        <p class="eyebrow" data-i18n="expertise.eyebrow"></p>
         <h2 data-i18n="expertise.title"></h2>
       </div>
       <div class="grid cards">
@@ -78,9 +101,33 @@
       </div>
     </section>
 
+    <section class="section contact-section" id="contact" data-nosnippet>
+      <div class="section-heading">
+        <h2 data-i18n="contact.title"></h2>
+      </div>
+      <div>
+        <h3 data-i18n="contact.inPerson"></h3>
+        <p class="lead" data-i18n="contact.booking"></p>
+        <div class="cta-row booking-actions">
+          <a class="button primary direct-call" data-content-attr="href:contacts.phone" data-prefix="tel:" data-i18n="contact.callMe"></a>
+          <a class="button" data-content-attr="href:contacts.centerTel" data-i18n="contact.callCenter"></a>
+        </div>
+      </div>
+      <div>
+        <h3 data-i18n="contact.remote"></h3>
+        <p class="lead" data-i18n="contact.remoteIntro"></p>
+        <div class="button-row">
+          <a class="button" data-content-attr="href:contacts.telegramUrl" target="_blank" rel="noopener"><img class="service-icon" src="img/icons/telegram.svg" width="22" height="22" alt="" /><span data-i18n="contact.telegram"></span></a>
+          <a class="button" data-content-attr="href:contacts.email" data-prefix="mailto:"><img class="service-icon" src="img/icons/email.svg" width="22" height="22" alt="" /><span data-i18n="contact.email"></span></a>
+        </div>
+      </div>
+      <div class="button-row">
+        <a class="button" data-vcard download rel="nofollow" data-i18n-attr="title:contact.vcardTooltip"><img class="service-icon" src="img/icons/contacts.svg" width="22" height="22" alt="" /><span data-i18n="contact.vcard"></span></a>
+      </div>
+    </section>
+
     <section class="section" id="projects">
       <div class="section-heading">
-        <p class="eyebrow" data-i18n="projects.eyebrow"></p>
         <h2 data-i18n="projects.title"></h2>
       </div>
       <div class="link-list">
@@ -95,7 +142,6 @@
 
     <section class="section" id="publications">
       <div class="section-heading">
-        <p class="eyebrow" data-i18n="publications.eyebrow"></p>
         <h2 data-i18n="publications.title"></h2>
       </div>
       <div class="button-row">
@@ -106,19 +152,6 @@
       </div>
     </section>
 
-    <section class="section contact-section" id="contact" data-nosnippet>
-      <div class="section-heading">
-        <p class="eyebrow" data-i18n="contact.eyebrow"></p>
-        <h2 data-i18n="contact.title"></h2>
-      </div>
-      <div class="contact-grid">
-        <a class="contact-item" data-content-attr="href:contacts.email" data-prefix="mailto:"><img class="service-icon" src="img/icons/email.svg" width="22" height="22" alt="" aria-hidden="true" /><div class="resource-copy"><span>Email</span>
-          <strong data-content="contacts.email"></strong></div></a>
-        <a class="contact-item" data-content-attr="href:contacts.telegramUrl" target="_blank" rel="noopener"><img class="service-icon" src="img/icons/telegram.svg" width="22" height="22" alt="" aria-hidden="true" /><div class="resource-copy"><span data-i18n="contact.telegram"></span>
-          <strong data-content="contacts.telegramUsername"></strong></div></a>
-        <a class="contact-item" data-vcard download rel="nofollow" data-i18n-attr="title:contact.vcardTooltip"><img class="service-icon contacts-icon" src="img/icons/contacts.svg" width="28" height="28" alt="" aria-hidden="true" /><strong data-i18n="contact.vcard"></strong></a>
-      </div>
-    </section>
   </main>
 
   <footer class="site-footer">

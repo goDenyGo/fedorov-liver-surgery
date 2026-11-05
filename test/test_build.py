@@ -20,8 +20,8 @@ class BuildTests(unittest.TestCase):
         for lang in ('uk', 'en'):
             html = self.render(lang)
             self.assertIn('<html lang="' + lang + '">', html)
-            self.assertIn('<h1>' + self.content['translations'][lang]['hero']['name'] + '</h1>', html)
-            self.assertIn(self.content['translations'][lang]['about']['lead'], html)
+            self.assertIn('<h1>' + self.content['translations'][lang]['hero']['displayName'] + '</h1>', html)
+            self.assertIn(self.content['translations'][lang]['about']['lead'].replace('**', ''), html.replace('<strong>', '').replace('</strong>', ''))
             self.assertIn('href="/uk/"', html)
             self.assertIn('href="/en/"', html)
             self.assertIn('href="/vcard/denys-fedorov-' + lang + '.vcf"', html)
@@ -31,11 +31,13 @@ class BuildTests(unittest.TestCase):
             self.assertNotIn('data-i18n', html)
             self.assertNotIn('data-content', html)
             self.assertNotIn('data/site-content.json', html)
-            self.assertNotIn('tel:', html)
+            self.assertEqual(html.count('href="tel:'), 2)
+            self.assertIn('href="tel:+380735550203"', html)
+            self.assertIn('href="tel:+380800333911"', html)
             self.assertIn('data-nosnippet', html)
 
     def test_edits_escaped_and_omitted_fields_stay_unpublished(self):
-        self.content['translations']['uk']['hero']['name'] = '<script>alert("x")</script> & name'
+        self.content['translations']['uk']['hero']['displayName'] = '<script>alert("x")</script> & name'
         self.content['translations']['uk']['meta']['title'] = '"<unsafe>&'
         self.content['editorial']['fieldStatus']['/translations/uk/about/lead'] = 'omit'
         self.content['links']['scopus'] = None
