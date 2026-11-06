@@ -167,7 +167,13 @@ h3 { font-size: 1.25rem; }
   html:not(.js) .nav-toggle { display: none; }
 }
 
-.hero-summary { max-width: 36ch; }
+.hero-summary {
+  max-width: 42ch;
+  color: var(--accent-dark);
+  font-size: clamp(1.125rem, 2vw, 1.4rem);
+  font-weight: 700;
+  line-height: 1.4;
+}
 .cta-row { align-items: center; }
 .secondary-link { color: var(--accent-dark); font-weight: 700; text-underline-offset: 0.2em; }
 .visit-checklist { padding-inline-start: 1.5rem; }
