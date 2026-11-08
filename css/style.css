@@ -292,6 +292,14 @@ h3 { font-size: 1.25rem; }
   border-top: 1px solid var(--line);
 }
 .consultation-guide .cta-row { margin-top: 16px; }
+.consultation-guide .consultation-urgent {
+  padding: 10px 14px;
+  border: 1px solid #ead1a0;
+  border-radius: 12px;
+  background: #fff4df;
+  color: #633a0e;
+  font-weight: 700;
+}
 
 .contact-panel {
   padding: clamp(24px, 5vw, 56px);

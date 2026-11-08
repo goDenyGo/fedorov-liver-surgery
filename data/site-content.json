@@ -79,10 +79,11 @@
       },
       "consultationGuide": {
         "title": "Коли варто звернутися за консультацією",
-        "liverFinding": "**На УЗД, КТ або МРТ виявили утворення в печінці.** На консультації можна переглянути знімки й обговорити, чи потрібні додаткові обстеження.",
-        "followUp": "**Після лікування раку кишківника на контрольному обстеженні знайшли вогнища в печінці.** Візьміть нові й попередні знімки, щоб ми могли порівняти їх і обговорити, що робити далі.",
+        "liverFinding": "**На УЗД, КТ або МРТ виявили утворення в печінці.** Для першого звернення можна підготувати наявний висновок УЗД, навіть якщо КТ або МРТ ще немає.",
+        "followUp": "**Після лікування раку кишківника на контрольному обстеженні знайшли вогнища в печінці.** Підготуйте знімки контрольного обстеження, а за наявності — і попередні знімки, щоб ми могли їх порівняти.",
         "secondOpinion": "**Виявили пухлину печінки, жовчних проток або підшлункової залози.** Зверніться, якщо хочете обговорити, чи можлива операція, або отримати другу думку.",
-        "symptoms": "**Якщо є лише симптоми.** Якщо скарги не минають, зверніться до сімейного лікаря для проходження первинного обстеження. Якщо ви щойно помітили пожовтіння білків очей або шкіри, терміново зверніться по медичну допомогу в найближчий медичний заклад.",
+        "symptoms": "**Якщо є лише симптоми.** Якщо скарги не минають, зверніться до сімейного лікаря для проходження первинного обстеження.",
+        "urgentJaundice": "Якщо ви щойно помітили пожовтіння білків очей або шкіри, терміново зверніться по медичну допомогу в найближчий медичний заклад.",
         "prepare": "Що підготувати"
       },
       "projects": {
@@ -120,6 +121,7 @@
         "remote": "Заочна консультація за документами",
         "remoteIntro": "Якщо ви перебуваєте за кордоном або з інших причин не можете приїхати до Києва, коротко опишіть вашу ситуацію в Telegram або електронною поштою. Я підкажу, які документи й знімки надіслати.",
         "callMe": "Зателефонувати напряму",
+        "familyHelp": "Якщо ви близька людина пацієнта й маєте його згоду, під час першого звернення уточніть, чи можете допомогти із записом на консультацію та як передати медичні матеріали.",
         "remoteNotice": "Заочна консультація через Telegram або електронну пошту має інформаційний характер і є попереднім обговоренням вашого випадку. За результатами такого обговорення лікування не призначається, медичний висновок не видається. Листування не має сили офіційного медичного висновку й не замінює очну консультацію.",
         "emergencyNotice": "**Ургентні консультації не надаються — у невідкладній ситуації негайно викликайте швидку.**\nВ Україні телефонуйте 103. За кордоном телефонуйте за місцевим номером екстреної допомоги."
       },
@@ -130,7 +132,7 @@
         "title": "Як підготуватись до консультації",
         "intro": "Зберіть матеріали обстежень і лікування, які вже маєте.",
         "imaging": "**КТ і МРТ.** Підготуйте флешку або диск із повними знімками КТ чи МРТ (файли DICOM). Якщо їх немає, попросіть копію в центрі, де проходили обстеження.",
-        "records": "**Висновки й виписки.** Підготуйте оригінали або чіткі цифрові копії описів КТ і МРТ, виписок зі стаціонару, результатів аналізів та гістологічних висновків, якщо вони є.",
+        "records": "**Висновки й виписки.** Підготуйте оригінали або чіткі цифрові копії висновків УЗД, описів КТ і МРТ, виписок зі стаціонару, результатів аналізів та гістологічних висновків, якщо вони є.",
         "questions": "**Сформулюйте головне питання.** Коротко занотуйте, коли виявили проблему, яке лікування вже було та які ліки приймаєте. Подумайте, що саме ви хочете з’ясувати на консультації. Наприклад, «Чи можна розглядати операцію в моєму випадку?» або «Що мені робити далі?»",
         "chronology": "**Розкладіть матеріали за датами.** За можливості розкладіть документи й дослідження за датами, від найдавніших до найновіших. У назвах цифрових файлів або папок зазначте дату й тип документа чи дослідження.",
         "pathology": "**Гістологічні скельця й парафінові блоки.** Якщо вам робили біопсію або операцію, ці матеріали часто потрібні, щоб наші гістологи повторно переглянули зразки."
@@ -209,10 +211,11 @@
       },
       "consultationGuide": {
         "title": "When to seek a consultation",
-        "liverFinding": "**An ultrasound, CT or MRI found a growth in your liver.** We can review the images and discuss whether you need more tests.",
-        "followUp": "**A follow-up scan after treatment for bowel cancer found spots in your liver.** Bring your recent and earlier scans so we can compare them and discuss what to do next.",
+        "liverFinding": "**An ultrasound, CT or MRI found a growth in your liver.** For your first consultation, you can bring your ultrasound report if you have one, even if you haven’t had a CT or MRI yet.",
+        "followUp": "**A follow-up scan after treatment for bowel cancer found spots in your liver.** Bring your follow-up scans and any earlier scans you have so we can compare them.",
         "secondOpinion": "**You’ve been diagnosed with a tumor of the liver, bile ducts or pancreas.** You can book a consultation to discuss whether surgery is an option or to get a second opinion.",
-        "symptoms": "**If you only have symptoms.** If your symptoms persist, see your primary care doctor for an initial assessment. If you’ve just noticed yellowing of the whites of your eyes or your skin, seek urgent medical care at the nearest medical facility.",
+        "symptoms": "**If you only have symptoms.** If your symptoms persist, see your primary care doctor for an initial assessment.",
+        "urgentJaundice": "If you’ve just noticed yellowing of the whites of your eyes or your skin, seek urgent medical care at the nearest medical facility.",
         "prepare": "What to prepare"
       },
       "projects": {
@@ -250,6 +253,7 @@
         "remote": "Remote review of medical records",
         "remoteIntro": "Briefly describe your situation on Telegram or by email. I’ll let you know which records and scans to send.",
         "callMe": "Call me",
+        "familyHelp": "If you’re contacting me for a loved one with their consent, ask when you first get in touch whether you can help book the consultation and how to share their medical records.",
         "remoteNotice": "A remote consultation via Telegram or email is an initial discussion of your case for information only. No treatment is prescribed or medical report issued through this exchange. The correspondence has no standing as a formal medical report and does not replace an in-person consultation.",
         "emergencyNotice": "**In a medical emergency, call emergency services immediately.**\nIn Ukraine, dial 103. Elsewhere, call your local emergency number."
       },
@@ -260,7 +264,7 @@
         "title": "How to prepare for your consultation",
         "intro": "Gather the records and imaging you already have.",
         "imaging": "**CT and MRI.** Prepare a USB drive or disc with the complete CT or MRI scans (DICOM files). If you don’t have them, ask the imaging center for a copy.",
-        "records": "**Reports and discharge summaries.** Prepare originals or clear digital copies of CT and MRI reports, hospital discharge summaries, lab results and any pathology reports.",
+        "records": "**Reports and discharge summaries.** Prepare originals or clear digital copies of ultrasound, CT and MRI reports, hospital discharge summaries, lab results and any pathology reports.",
         "questions": "**Write down your main question.** Briefly note when the problem was found, what treatment you’ve received and what medications you take. Think about what you most want to find out at the consultation. For example, “Could surgery be an option for me?” or “What should I do next?”",
         "chronology": "**Sort your records by date.** If possible, arrange your records and scans by date, from oldest to newest. Include the date and the type of document or scan in each digital file or folder name.",
         "pathology": "**Pathology slides and paraffin blocks.** If you’ve had a biopsy or surgery, our pathologists often need these materials to review your samples."
