@@ -188,6 +188,7 @@ def build():
     (output / 'index.html').write_text(render(content, template, 'uk'))
     subprocess.run(['node', str(ROOT / 'scripts/generate-vcards.mjs'), '--dist'], check=True)
     shutil.copyfile(ROOT / 'CNAME', output / 'CNAME')
+    shutil.copyfile(ROOT / 'google0968172d605b4b48.html', output / 'google0968172d605b4b48.html')
     (output / '.nojekyll').touch()
     base = content['site']['url'].rstrip('/')
     (output / 'robots.txt').write_text('User-agent: *\nDisallow: /vcard/\nSitemap: ' + base + '/sitemap.xml\n')
