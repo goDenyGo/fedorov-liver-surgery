@@ -76,15 +76,6 @@ code { background: #ede8df; padding: 0.1rem 0.35rem; border-radius: 0.35rem; }
   align-items: center;
 }
 
-.eyebrow {
-  color: var(--accent);
-  text-transform: uppercase;
-  letter-spacing: 0.14em;
-  font-size: 0.78rem;
-  font-weight: 800;
-  margin: 0 0 12px;
-}
-
 h1, h2, h3 { line-height: 1.12; margin: 0; }
 h1 { font-size: clamp(3.2rem, 8vw, 6.5rem); letter-spacing: -0.06em; }
 h2 { font-size: clamp(2rem, 4vw, 3.2rem); letter-spacing: -0.04em; }
@@ -121,7 +112,7 @@ h3 { font-size: 1.25rem; }
 
 .section-heading { margin-bottom: 28px; }
 .grid { display: grid; gap: 18px; }
-.cards { grid-template-columns: repeat(3, 1fr); }
+.cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .card, .contact-item, .link-list a {
   background: rgba(255, 255, 255, 0.78);
   border: 1px solid var(--line);
@@ -129,7 +120,28 @@ h3 { font-size: 1.25rem; }
   padding: 24px;
   box-shadow: 0 10px 40px rgba(20, 33, 61, 0.06);
 }
+#expertise .card {
+  position: relative;
+  padding-inline-end: calc(20% + 36px);
+  text-align: start;
+  overflow-wrap: anywhere;
+}
+
+.clinical-icon {
+  position: absolute;
+  inset-inline-end: 24px;
+  top: 24px;
+  width: 20%;
+  height: 66.667%;
+  object-fit: contain;
+  object-position: right top;
+}
 .card p { color: var(--muted); margin-bottom: 0; }
+
+@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  #expertise .card { transition: transform 180ms ease-out; }
+  #expertise .card:hover { transform: scale(1.02); }
+}
 
 .link-list { display: grid; gap: 14px; }
 .link-list a, .contact-item { text-decoration: none; display: flex; justify-content: space-between; gap: 20px; align-items: center; }
@@ -230,5 +242,8 @@ h3 { font-size: 1.25rem; }
 
 @media (width > 820px) {
   .hero h1 { font-size: clamp(2.56rem, 6.4vw, 5.2rem); }
-  .hero h1:lang(uk) { font-size: clamp(1.8rem, 5.6vw, 4.8rem); }
+  .hero h1:lang(uk) {
+    font-size: clamp(1.8rem, 5.6vw, 4.8rem);
+    white-space: pre-line;
+  }
 }

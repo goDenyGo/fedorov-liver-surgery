@@ -24,9 +24,8 @@
         "languages": "Вибір мови"
       },
       "hero": {
-        "eyebrow": "Хірургія печінки",
         "name": "Денис Федоров",
-        "displayName": "Денис Олександрович Федоров",
+        "displayName": "Федоров\nДенис\nОлександрович",
         "subtitle": "Гепатобіліарний хірург · Трансплантолог",
         "institution": "ННЦХТ імені О.О.Шалімова, Київ",
         "contactButton": "Отримати консультацію",
@@ -39,24 +38,32 @@
       "about": {
         "eyebrow": "About",
         "title": "Про мене",
-        "lead": "Я Денис Федоров, **гепатобіліарний хірург**, кандидат медичних наук і провідний науковий співробітник ННЦХТ імені О.О. Шалімова в Києві.",
+        "lead": "Я — Федоров Денис, **гепатобіліарний хірург**, кандидат медичних наук і провідний науковий співробітник ННЦХТ імені О.О. Шалімова в Києві.",
         "text": "Мій основний напрям — хірургічне лікування **первинних злоякісних пухлин і метастазів у печінці**. Також консультую пацієнтів із **доброякісними новоутвореннями печінки**, зокрема гемангіомами, аденомами та фокальною нодулярною гіперплазією. Виконую **лапароскопічні та відкриті резекції** печінки й підшлункової залози, а також втручання на інших органах гепатобіліарної зони. Консультую пацієнтів із пухлинами підшлункової залози.",
         "consultation": "На консультації ми переглядаємо результати обстежень і обговорюємо, чи можна розглядати операцію у вашому випадку. Якщо для рішення потрібні додаткові обстеження або консультації інших фахівців, пояснюю, які саме й навіщо. Наприкінці обговорюємо наступний крок."
       },
       "expertise": {
         "eyebrow": "Clinical expertise",
         "title": "Клінічні напрями",
-        "liverTumors": {
-          "title": "Пухлини печінки",
-          "text": "Первинні злоякісні пухлини печінки, зокрема гепатоцелюлярна карцинома та внутрішньопечінкова холангіокарцинома. Метастази в печінці, зокрема при раку ободової або прямої кишки."
+        "primaryLiverTumors": {
+          "title": "Первинні пухлини печінки та жовчних проток",
+          "text": "**Гепатоцелюлярна карцинома** — рак, що виникає з клітин печінки. **Внутрішньопечінкова холангіокарцинома** та **хіларна холангіокарцинома** (пухлина Клацкіна) — пухлини, що походять з клітин жовчних проток."
         },
-        "laparoscopy": {
-          "title": "Лапароскопічна хірургія",
-          "text": "Малоінвазивні резекції печінки, складні анатомічні та паренхімозберігаючі втручання."
+        "liverMetastases": {
+          "title": "Метастази в печінку",
+          "text": "**Метастази в печінці** — пухлинні вогнища, що утворилися внаслідок поширення пухлини з іншого органа. Консультую щодо метастазів **раку ободової або прямої кишки** та **нейроендокринних пухлин**."
         },
-        "transplant": {
-          "title": "Трансплантація печінки",
-          "text": "Хірургічні аспекти трансплантації печінки та комплексне ведення пацієнтів."
+        "benignLiverLesions": {
+          "title": "Доброякісна патологія печінки",
+          "text": "**Гемангіоми** — доброякісні судинні утворення. **Аденоми** — доброякісні пухлини з клітин печінки. **Фокальна нодулярна гіперплазія (ФНГ)** — доброякісне вузлове розростання тканини печінки. **Ехінококові кісти** спричинені паразитом, а **цистаденоми** належать до кістозних пухлин."
+        },
+        "pancreaticTumors": {
+          "title": "Пухлини підшлункової залози",
+          "text": "**Рак підшлункової залози** — злоякісна пухлина. **Нейроендокринні пухлини** виникають із клітин, які виробляють гормони. **Кістозні утворення** мають одну або кілька порожнин із рідиною."
+        },
+        "obstructiveJaundice": {
+          "title": "Механічна жовтяниця",
+          "text": "**Механічна жовтяниця** — пожовтіння шкіри та білків очей через порушення відтоку жовчі внаслідок перекриття протоки пухлиною або конкрементом."
         }
       },
       "projects": {
@@ -82,7 +89,7 @@
       },
       "contact": {
         "eyebrow": "Contact",
-        "title": "Як отримати консультацію",
+        "title": "Отримати консультацію",
         "vcard": "Зберегти мій контакт в телефон",
         "phone": "Телефон",
         "telegram": "Написати в Telegram",
@@ -126,7 +133,6 @@
         "languages": "Language switcher"
       },
       "hero": {
-        "eyebrow": "Liver surgery",
         "name": "Denys Fedorov",
         "displayName": "Denys Fedorov",
         "subtitle": "HPB Surgeon · Liver Transplant Surgeon",
@@ -148,17 +154,25 @@
       "expertise": {
         "eyebrow": "Clinical expertise",
         "title": "Clinical expertise",
-        "liverTumors": {
-          "title": "Liver tumors",
-          "text": "Primary liver cancers, including hepatocellular carcinoma and intrahepatic cholangiocarcinoma. Liver metastases, including those from colon or rectal cancer."
+        "primaryLiverTumors": {
+          "title": "Primary liver and bile duct tumors",
+          "text": "**Hepatocellular carcinoma** is cancer that starts in liver cells. **Intrahepatic cholangiocarcinoma** starts in the bile ducts inside the liver. **Perihilar cholangiocarcinoma** (Klatskin tumor) occurs where the right and left hepatic ducts meet."
         },
-        "laparoscopy": {
-          "title": "Laparoscopic liver surgery",
-          "text": "Minimally invasive liver resections, complex anatomical and parenchyma-sparing procedures."
+        "liverMetastases": {
+          "title": "Liver metastases",
+          "text": "**Liver metastases** are tumors that have spread to the liver from another organ. I see patients with liver metastases from **colon or rectal cancer** and **neuroendocrine tumors**."
         },
-        "transplant": {
-          "title": "Liver transplantation",
-          "text": "Surgical aspects of liver transplantation and comprehensive patient care."
+        "benignLiverLesions": {
+          "title": "Benign liver lesions",
+          "text": "**Hemangiomas** are benign growths made up of blood vessels. **Liver adenomas** are benign tumors that arise from liver cells. **Focal nodular hyperplasia (FNH)** is a benign overgrowth of liver tissue. **Echinococcal cysts** are caused by a parasite, while **cystadenomas** are cystic tumors."
+        },
+        "pancreaticTumors": {
+          "title": "Pancreatic tumors",
+          "text": "**Pancreatic cancer** is a malignant tumor. **Neuroendocrine tumors** arise from hormone-producing cells. **Cystic lesions** contain one or more fluid-filled spaces."
+        },
+        "obstructiveJaundice": {
+          "title": "Obstructive jaundice",
+          "text": "**Obstructive jaundice** is yellowing of the skin and whites of the eyes when a tumor or stone blocks a bile duct."
         }
       },
       "projects": {
@@ -184,7 +198,7 @@
       },
       "contact": {
         "eyebrow": "Contact",
-        "title": "How to get a consultation",
+        "title": "Book a consultation",
         "vcard": "Save my contact to your phone",
         "phone": "Phone",
         "telegram": "Message on Telegram",
@@ -302,7 +316,6 @@
       "/translations/uk/nav/projects": "needs_confirmation",
       "/translations/uk/nav/publications": "needs_confirmation",
       "/translations/uk/nav/contact": "needs_confirmation",
-      "/translations/uk/hero/eyebrow": "needs_confirmation",
       "/translations/uk/hero/name": "needs_confirmation",
       "/translations/uk/hero/subtitle": "needs_confirmation",
       "/translations/uk/hero/institution": "needs_confirmation",
@@ -317,12 +330,6 @@
       "/translations/uk/about/text": "confirmed",
       "/translations/uk/expertise/eyebrow": "needs_confirmation",
       "/translations/uk/expertise/title": "needs_confirmation",
-      "/translations/uk/expertise/liverTumors/title": "needs_confirmation",
-      "/translations/uk/expertise/liverTumors/text": "needs_confirmation",
-      "/translations/uk/expertise/laparoscopy/title": "needs_confirmation",
-      "/translations/uk/expertise/laparoscopy/text": "needs_confirmation",
-      "/translations/uk/expertise/transplant/title": "needs_confirmation",
-      "/translations/uk/expertise/transplant/text": "needs_confirmation",
       "/translations/uk/projects/eyebrow": "needs_confirmation",
       "/translations/uk/projects/title": "needs_confirmation",
       "/translations/uk/projects/book/label": "needs_confirmation",
@@ -346,7 +353,6 @@
       "/translations/en/nav/projects": "needs_confirmation",
       "/translations/en/nav/publications": "needs_confirmation",
       "/translations/en/nav/contact": "needs_confirmation",
-      "/translations/en/hero/eyebrow": "needs_confirmation",
       "/translations/en/hero/name": "needs_confirmation",
       "/translations/en/hero/subtitle": "needs_confirmation",
       "/translations/en/hero/institution": "needs_confirmation",
@@ -361,12 +367,6 @@
       "/translations/en/about/text": "confirmed",
       "/translations/en/expertise/eyebrow": "needs_confirmation",
       "/translations/en/expertise/title": "needs_confirmation",
-      "/translations/en/expertise/liverTumors/title": "needs_confirmation",
-      "/translations/en/expertise/liverTumors/text": "needs_confirmation",
-      "/translations/en/expertise/laparoscopy/title": "needs_confirmation",
-      "/translations/en/expertise/laparoscopy/text": "needs_confirmation",
-      "/translations/en/expertise/transplant/title": "needs_confirmation",
-      "/translations/en/expertise/transplant/text": "needs_confirmation",
       "/translations/en/projects/eyebrow": "needs_confirmation",
       "/translations/en/projects/title": "needs_confirmation",
       "/translations/en/projects/book/label": "needs_confirmation",
