@@ -42,17 +42,14 @@ code { background: #ede8df; padding: 0.1rem 0.35rem; border-radius: 0.35rem; }
 }
 
 .logo {
-  width: 44px;
+  width: 56px;
   height: 44px;
+  flex: 0 0 56px;
   display: inline-grid;
   place-items: center;
-  border-radius: 50%;
-  background: var(--text);
-  color: white;
-  text-decoration: none;
-  font-weight: 800;
-  letter-spacing: 0.04em;
 }
+
+.logo img { display: block; width: 100%; height: auto; }
 
 .nav-menu { display: flex; gap: 1.25rem; align-items: center; }
 .nav-menu a { text-decoration: none; color: var(--muted); font-weight: 600; }

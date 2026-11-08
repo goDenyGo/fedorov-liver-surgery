@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 330 180" role="img" aria-labelledby="title">
+  <title id="title">DF — liver and laparoscopic grasper</title>
+  <path fill="#14213d" fill-rule="evenodd" d="
+    M22 24h62c48 0 80 26 80 66s-32 66-80 66H22Z
+    M53 101c-3-22 6-37 22-41 11-3 22 1 31 6 5 3 9 3 15 2
+    9-2 18-3 24 0 3 1 4 4 2 7-8 12-21 22-37 27-8 2-15 3-22 6
+    -10 5-15 13-23 12-7-1-11-8-12-19Z"/>
+  <path fill="#0f766e" d="
+    M182 24h69l47-13 7 23-51 16h-41v24h39l39 15-9 23-34-13h-35v57h-31Z"/>
+</svg>

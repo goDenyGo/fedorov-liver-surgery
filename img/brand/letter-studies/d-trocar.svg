@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title">
+  <title id="title">D — троакар у внутрішньому просвіті</title>
+  <path fill="#090909" fill-rule="evenodd" d="M18 14h37c33 0 54 19 54 50s-21 50-54 50H18Z
+    M37 33v62h18c22 0 35-11 35-31S77 33 55 33Z"/>
+  <path fill="#090909" d="M51 41h20v8l-4 5v4l9-5 3 5-12 7v20l-6 5-2-5V55l-4-6h-4Z"/>
+</svg>
