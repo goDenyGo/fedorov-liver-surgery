@@ -209,3 +209,11 @@ img/denys-fedorov-portrait.jpg (JPEG 1200×1500, близько 502 КіБ).
 Перевірено sips, 4 Python-тести, Node-тест vCard, build.py, git diff --check
 і метатеги в згенерованих /uk/ та /en/. Після push 8f18fb8 перевірено HTTPS: /, /uk/ і /en/ віддають нові og:image та twitter:image, тип і розміри відповідають JPEG, а байти фото збігаються з локальним файлом.
 Відображення та кадрування в окремих месенджерах не перевірялися.
+
+## Опис консультацій у метаданих, 08.11.2026, Europe/Kyiv
+
+Оновлено translations.uk.meta.description дослівно за текстом власника
+та translations.en.meta.description англійським перекладом. Генератор
+використовує їх для meta description, og:description і twitter:description.
+Пройшли Python unittest (4), Node vCard (1) і git diff --check.
+Наступний крок — перевірити три поля у публічних /, /uk/ і /en/ після Pages.
