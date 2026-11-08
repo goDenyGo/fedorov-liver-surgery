@@ -216,4 +216,6 @@ img/denys-fedorov-portrait.jpg (JPEG 1200×1500, близько 502 КіБ).
 та translations.en.meta.description англійським перекладом. Генератор
 використовує їх для meta description, og:description і twitter:description.
 Пройшли Python unittest (4), Node vCard (1) і git diff --check.
-Наступний крок — перевірити три поля у публічних /, /uk/ і /en/ після Pages.
+Після push 9e737c9 перевірено HTTPS: усі три поля на /, /uk/ і /en/
+дослівно збігаються з описами JSON. Прев’ю в месенджерах не перевірялися.
+Наступних дій щодо цієї зміни немає.
