@@ -185,6 +185,10 @@ h3 { font-size: 1.25rem; }
   object-fit: contain;
   object-position: right top;
 }
+.clinical-icon--tall {
+  height: auto;
+  max-height: calc(100% - 24px);
+}
 .card p { color: var(--muted); margin-bottom: 0; }
 
 @media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
@@ -278,6 +282,16 @@ h3 { font-size: 1.25rem; }
 .section + .section {
   border-top: 1px solid var(--line);
 }
+
+.consultation-guide { max-width: 800px; }
+.consultation-guide ul { margin: 0; padding: 0; list-style: none; }
+.consultation-guide li + li { margin-top: 10px; }
+.consultation-guide p {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+}
+.consultation-guide .cta-row { margin-top: 16px; }
 
 .contact-panel {
   padding: clamp(24px, 5vw, 56px);
@@ -403,7 +417,7 @@ h3 { font-size: 1.25rem; }
   color: #633a0e;
 }
 
-.emergency-notice p { margin: 0; }
+.emergency-notice p { margin: 0; white-space: pre-line; }
 .emergency-notice img { flex: none; }
 
 .fellowship-list {
@@ -415,10 +429,13 @@ h3 { font-size: 1.25rem; }
 
 .fellowship-list li {
   display: flex;
-  align-items: baseline;
+  align-items: flex-start;
   gap: 10px;
 }
 
-.fellowship-list [aria-hidden="true"] {
-  flex: 0 0 1.5em;
+.fellowship-flag {
+  flex: none;
+  margin-block-start: calc(0.8em - 8px);
+  border-radius: 2px;
+  outline: 1px solid var(--line);
 }

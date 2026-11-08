@@ -77,6 +77,14 @@
           "text": "**Механічна жовтяниця** — пожовтіння шкіри та білків очей через порушення відтоку жовчі внаслідок перекриття протоки пухлиною або конкрементом."
         }
       },
+      "consultationGuide": {
+        "title": "Коли варто звернутися за консультацією",
+        "liverFinding": "**На УЗД, КТ або МРТ виявили утворення в печінці.** На консультації можна переглянути знімки й обговорити, чи потрібні додаткові обстеження.",
+        "followUp": "**Після лікування раку кишківника на контрольному обстеженні знайшли вогнища в печінці.** Візьміть нові й попередні знімки, щоб ми могли порівняти їх і обговорити, що робити далі.",
+        "secondOpinion": "**Виявили пухлину печінки, жовчних проток або підшлункової залози.** Зверніться, якщо хочете обговорити, чи можлива операція, або отримати другу думку.",
+        "symptoms": "**Якщо є лише симптоми.** Якщо скарги не минають, зверніться до сімейного лікаря для проходження первинного обстеження. Якщо ви щойно помітили пожовтіння білків очей або шкіри, терміново зверніться по медичну допомогу в найближчий медичний заклад.",
+        "prepare": "Що підготувати"
+      },
       "projects": {
         "eyebrow": "Education",
         "title": "Освітні ресурси та проєкти",
@@ -113,7 +121,7 @@
         "remoteIntro": "Якщо ви перебуваєте за кордоном або з інших причин не можете приїхати до Києва, коротко опишіть вашу ситуацію в Telegram або електронною поштою. Я підкажу, які документи й знімки надіслати.",
         "callMe": "Зателефонувати напряму",
         "remoteNotice": "Заочна консультація через Telegram або електронну пошту має інформаційний характер і є попереднім обговоренням вашого випадку. За результатами такого обговорення лікування не призначається, медичний висновок не видається. Листування не має сили офіційного медичного висновку й не замінює очну консультацію.",
-        "emergencyNotice": "**Ургентні консультації не надаються — у невідкладній ситуації негайно викликайте швидку.** \nВ Україні телефонуйте 103. За кордоном телефонуйте за місцевим номером екстреної допомоги."
+        "emergencyNotice": "**Ургентні консультації не надаються — у невідкладній ситуації негайно викликайте швидку.**\nВ Україні телефонуйте 103. За кордоном телефонуйте за місцевим номером екстреної допомоги."
       },
       "footer": {
         "rights": "Усі права захищені."
@@ -199,6 +207,14 @@
           "text": "**Obstructive jaundice** is yellowing of the skin and whites of the eyes when a tumor or stone blocks a bile duct."
         }
       },
+      "consultationGuide": {
+        "title": "When to seek a consultation",
+        "liverFinding": "**An ultrasound, CT or MRI found a growth in your liver.** We can review the images and discuss whether you need more tests.",
+        "followUp": "**A follow-up scan after treatment for bowel cancer found spots in your liver.** Bring your recent and earlier scans so we can compare them and discuss what to do next.",
+        "secondOpinion": "**You’ve been diagnosed with a tumor of the liver, bile ducts or pancreas.** You can book a consultation to discuss whether surgery is an option or to get a second opinion.",
+        "symptoms": "**If you only have symptoms.** If your symptoms persist, see your primary care doctor for an initial assessment. If you’ve just noticed yellowing of the whites of your eyes or your skin, seek urgent medical care at the nearest medical facility.",
+        "prepare": "What to prepare"
+      },
       "projects": {
         "eyebrow": "Education",
         "title": "Educational resources and projects",
@@ -235,7 +251,7 @@
         "remoteIntro": "Briefly describe your situation on Telegram or by email. I’ll let you know which records and scans to send.",
         "callMe": "Call me",
         "remoteNotice": "A remote consultation via Telegram or email is an initial discussion of your case for information only. No treatment is prescribed or medical report issued through this exchange. The correspondence has no standing as a formal medical report and does not replace an in-person consultation.",
-        "emergencyNotice": "**In a medical emergency, call emergency services immediately.** In Ukraine, dial 103. Elsewhere, call your local emergency number."
+        "emergencyNotice": "**In a medical emergency, call emergency services immediately.**\nIn Ukraine, dial 103. Elsewhere, call your local emergency number."
       },
       "footer": {
         "rights": "All rights reserved."
