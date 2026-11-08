@@ -9,7 +9,7 @@
     "uk": {
       "meta": {
         "title": "Федоров Денис — хірургія печінки та підшлункової залози, Київ",
-        "description": "Консультація щодо пухлин печінки, лапароскопічних операцій і трансплантації. Як записатися до центру Шалімова в Києві та що взяти на прийом."
+        "description": "Консультація щодо пухлин печінки та підшлункової залози, лапароскопічних операцій і трансплантації. Як записатися до центру Шалімова в Києві та що взяти на прийом."
       },
       "nav": {
         "menu": "Меню",
@@ -27,7 +27,7 @@
         "name": "Денис Федоров",
         "displayName": "Федоров\nДенис\nОлександрович",
         "subtitle": "Гепатобіліарний хірург · Трансплантолог",
-        "institution": "ННЦХТ імені О.О.Шалімова, Київ",
+        "institution": "ННЦХТ імені О. О. Шалімова, Київ",
         "contactButton": "Отримати консультацію",
         "vcardButton": "Зберегти контакт",
         "youtubeButton": "YouTube",
@@ -90,7 +90,7 @@
         },
         "telegram": {
           "label": "Telegram",
-          "title": "Telegram спільнота хірургів"
+          "title": "Спільнота хірургів у Telegram"
         }
       },
       "publications": {
@@ -101,7 +101,7 @@
       "contact": {
         "eyebrow": "Contact",
         "title": "Отримати консультацію",
-        "vcard": "Зберегти мій контакт в телефон",
+        "vcard": "Зберегти мій контакт у телефоні",
         "phone": "Телефон",
         "telegram": "Написати в Telegram",
         "vcardTooltip": "Завантажити контакт у форматі vCard (.vcf)",
@@ -110,7 +110,7 @@
         "inPerson": "Очна консультація в Києві",
         "callCenter": "Записатись через поліклініку",
         "remote": "Заочна консультація за документами",
-        "remoteIntro": "Якщо ви знаходитесь за кордоном або не можете приїхати в Київ з інших причин, коротко опишіть вашу ситуацію в Telegram або електронною поштою. Я підкажу, які документи й знімки надіслати.",
+        "remoteIntro": "Якщо ви перебуваєте за кордоном або з інших причин не можете приїхати до Києва, коротко опишіть вашу ситуацію в Telegram або електронною поштою. Я підкажу, які документи й знімки надіслати.",
         "callMe": "Зателефонувати напряму",
         "remoteNotice": "Заочна консультація через Telegram або електронну пошту має інформаційний характер і є попереднім обговоренням вашого випадку. За результатами такого обговорення лікування не призначається, медичний висновок не видається. Листування не має сили офіційного медичного висновку й не замінює очну консультацію.",
         "emergencyNotice": "**Ургентні консультації не надаються — у невідкладній ситуації негайно викликайте швидку.** \nВ Україні телефонуйте 103. За кордоном телефонуйте за місцевим номером екстреної допомоги."
@@ -131,7 +131,7 @@
     "en": {
       "meta": {
         "title": "Denys Fedorov — HPB surgeon",
-        "description": "Consultations on liver tumors, laparoscopic liver surgery and transplantation. How to book at the Shalimov Center in Kyiv and what to bring."
+        "description": "Consultations on liver and pancreatic tumors, laparoscopic liver surgery and transplantation. How to book at the Shalimov Center in Kyiv and what to bring."
       },
       "nav": {
         "menu": "Menu",
@@ -160,13 +160,13 @@
       "about": {
         "eyebrow": "About",
         "title": "About",
-        "lead": "I am Denys Fedorov, a **hepatobiliary surgeon**, Candidate of Medical Sciences and Lead Researcher at the O.O. Shalimov National Scientific Center of Surgery and Transplantation in Kyiv.",
+        "lead": "I am Denys Fedorov, PhD, a **hepatobiliary surgeon** and Lead Researcher at the O.O. Shalimov National Scientific Center of Surgery and Transplantation in Kyiv.",
         "text": "My main focus is surgery for **primary liver cancers and liver metastases**. I also see patients with **benign liver lesions**, including hemangiomas, adenomas and focal nodular hyperplasia. I perform **laparoscopic and open liver and pancreatic resections**, as well as other procedures in the hepatobiliary region. I also see patients with pancreatic tumors.",
         "consultation": "During your consultation, we review your test results and discuss whether surgery may be an option for you. If further tests or specialist consultations are needed, I explain which ones and why. We then discuss the next step."
       },
       "experience": {
         "title": "Training and experience",
-        "training": "I graduated from the Faculty of Medicine at **Bogomolets National Medical University** in 2004. In 2014, I defended my dissertation, “**Venous Reconstruction in Left Lateral Section Liver Transplantation from a Living Related Donor**,” and earned the degree of Candidate of Medical Sciences.",
+        "training": "I graduated from the Faculty of Medicine at **Bogomolets National Medical University** in 2004. In 2014, I defended my dissertation, “**Venous Reconstruction in Left Lateral Section Liver Transplantation from a Living Related Donor**,” and earned my PhD.",
         "fellowshipsTitle": "International training",
         "fellowships": {
           "korea": "2015 · Seoul, South Korea — training at Asan.",
@@ -192,7 +192,7 @@
         },
         "pancreaticTumors": {
           "title": "Pancreatic tumors",
-          "text": "**Pancreatic cancer** is a malignant tumor. **Neuroendocrine tumors** arise from hormone-producing cells. **Cystic lesions** contain one or more fluid-filled spaces."
+          "text": "**Pancreatic adenocarcinoma** is a malignant tumor. **Neuroendocrine tumors** arise from hormone-producing cells. **Cystic lesions** contain one or more fluid-filled spaces."
         },
         "obstructiveJaundice": {
           "title": "Obstructive jaundice",

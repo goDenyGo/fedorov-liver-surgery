@@ -12,7 +12,6 @@
   <header class="site-header">
     <nav class="nav" data-i18n-attr="aria-label:nav.label">
       <a class="logo" href="#top" data-i18n-attr="aria-label:nav.home">
-        <img src="img/brand/df-liver-b.svg" width="56" height="40" alt="" />
         <svg class="logo-season" viewBox="0 0 456 320" aria-hidden="true">
           <defs>
             <path id="logo-leaf" d="M0 0C-14 -7 -16 -23 0 -39C14 -24 14 -7 0 0Z"></path>
@@ -20,7 +19,70 @@
               <path d="M0 -3Q-1 4 0 10" fill="none" stroke="#aa804d" stroke-width="4" stroke-linecap="round"></path>
               <path d="M0 7C-8 5 -13 12 -12 19C-11 28 -4 32 0 30C4 32 11 28 12 19C13 12 8 5 0 7Z" fill="currentColor"></path>
             </g>
+            <g id="logo-flower">
+              <path d="M0 -3Q-1 5 0 14" fill="none" stroke="#82bc9b" stroke-width="4" stroke-linecap="round"></path>
+              <g fill="#f5d4d8">
+                <circle cx="0" cy="11" r="6"></circle>
+                <circle cx="8" cy="16" r="6"></circle>
+                <circle cx="5" cy="25" r="6"></circle>
+                <circle cx="-5" cy="25" r="6"></circle>
+                <circle cx="-8" cy="16" r="6"></circle>
+              </g>
+              <circle cx="0" cy="19" r="5" fill="#e2b775"></circle>
+            </g>
+            <mask id="logo-monogram-mask" maskUnits="userSpaceOnUse" x="0" y="0" width="456" height="320">
+              <rect width="456" height="320" fill="white"></rect>
+              <path class="logo-monogram" fill="black" fill-rule="evenodd" d="
+            M57 92H98C132 92 157 115 157 149C157 183 132 205 98 205H57Z
+            M91 120V177H97C114 177 125 166 125 149C125 132 114 120 97 120Z
+            M166 92H241V120H199V136H232V163H199V205H166Z"></path>
+            </mask>
           </defs>
+          <path fill="#14213d" mask="url(#logo-monogram-mask)" d="
+            M9 161
+            C8 109 40 60 91 32
+            C145 2 191 0 235 14
+            C273 25 296 41 321 47
+            C340 51 362 46 385 48
+            C421 50 451 66 453 84
+            C456 108 415 132 391 164
+            C374 186 369 207 344 224
+            C324 239 304 242 280 250
+            C253 259 235 272 223 283
+            C215 291 206 289 207 279
+            C209 260 220 233 243 217
+            C262 204 279 200 293 205
+            C307 210 320 222 340 209
+            C322 210 313 206 304 199
+            C323 195 340 188 347 171
+            C325 185 308 191 277 188
+            C289 173 293 153 311 136
+            C326 122 342 116 367 117
+            C388 118 404 115 415 98
+            C398 107 383 111 366 108
+            C374 102 382 94 384 86
+            C375 91 370 98 360 102
+            C351 106 341 107 333 109
+            C336 99 336 83 355 70
+            C342 70 332 81 328 93
+            C324 104 322 111 314 116
+            C305 121 296 129 289 137
+            C288 116 277 102 279 83
+            C280 69 288 59 298 50
+            C286 52 281 58 276 65
+            C272 60 271 53 270 46
+            C263 53 268 66 271 74
+            L269 87
+            C260 77 249 72 239 69
+            C226 65 219 58 212 50
+            C211 60 225 71 238 77
+            C255 85 270 100 273 123
+            C279 158 260 181 235 198
+            C210 215 195 235 187 253
+            C184 260 180 261 173 259
+            C131 251 89 279 61 306
+            C50 317 42 312 34 297
+            C20 270 11 211 9 161Z"></path>
           <g transform="translate(223 65) rotate(-48)">
             <use class="logo-leaf" href="#logo-leaf" fill="#6db59e"></use>
           </g>
@@ -57,11 +119,20 @@
           <g transform="translate(272 146) rotate(-80) scale(.78)">
             <use class="logo-leaf" href="#logo-leaf" fill="#82bc9b"></use>
           </g>
+          <g transform="translate(244 79)">
+            <use class="logo-flower" href="#logo-flower"></use>
+          </g>
           <g transform="translate(244 79) rotate(-27)">
             <use class="logo-fruit" href="#logo-fruit" color="#d7a65f"></use>
           </g>
+          <g transform="translate(354 117)">
+            <use class="logo-flower" href="#logo-flower"></use>
+          </g>
           <g transform="translate(354 117) rotate(-12)">
             <use class="logo-fruit" href="#logo-fruit" color="#d4838b"></use>
+          </g>
+          <g transform="translate(288 200)">
+            <use class="logo-flower" href="#logo-flower"></use>
           </g>
           <g transform="translate(288 200) rotate(12)">
             <use class="logo-fruit" href="#logo-fruit" color="#a696cf"></use>
