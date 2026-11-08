@@ -80,18 +80,19 @@ def render(content, template, language):
         raise ValueError('Both languages require a title and description')
     canonical = urljoin(base, language + '/')
     image = urljoin(base, safe_url(content['assets']['socialPreview'], base))
+    image_alt = value(content, f'translations.{language}.hero.photoAlt')
     metadata = [Element('title')]
     metadata[0].children = [title]
     for attr, name, text in [
         ('name', 'description', description), ('name', 'author', content['site']['copyrightName']),
         ('property', 'og:title', title), ('property', 'og:description', description),
         ('property', 'og:type', 'website'), ('property', 'og:url', canonical),
-        ('property', 'og:image', image), ('property', 'og:image:alt', 'Denys Fedorov — HPB Surgeon · Liver Transplant Surgeon'),
-        ('property', 'og:image:width', '1200'), ('property', 'og:image:height', '630'),
-        ('property', 'og:image:type', 'image/png'), ('property', 'og:locale', 'uk_UA' if language == 'uk' else 'en_US'),
+        ('property', 'og:image', image), ('property', 'og:image:alt', image_alt),
+        ('property', 'og:image:width', '1200'), ('property', 'og:image:height', '1500'),
+        ('property', 'og:image:type', 'image/jpeg'), ('property', 'og:locale', 'uk_UA' if language == 'uk' else 'en_US'),
         ('name', 'twitter:card', 'summary_large_image'), ('name', 'twitter:title', title),
         ('name', 'twitter:description', description), ('name', 'twitter:image', image),
-        ('name', 'twitter:image:alt', 'Denys Fedorov — HPB Surgeon · Liver Transplant Surgeon')]:
+        ('name', 'twitter:image:alt', image_alt)]:
         metadata.append(Element('meta', [(attr, name), ('content', text)]))
     metadata.append(Element('link', [('rel', 'canonical'), ('href', canonical)]))
     for lang in ('uk', 'en', 'x-default'):
