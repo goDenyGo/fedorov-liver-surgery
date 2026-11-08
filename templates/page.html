@@ -13,6 +13,60 @@
     <nav class="nav" data-i18n-attr="aria-label:nav.label">
       <a class="logo" href="#top" data-i18n-attr="aria-label:nav.home">
         <img src="img/brand/df-liver-b.svg" width="56" height="40" alt="" />
+        <svg class="logo-season" viewBox="0 0 456 320" aria-hidden="true">
+          <defs>
+            <path id="logo-leaf" d="M0 0C-14 -7 -16 -23 0 -39C14 -24 14 -7 0 0Z"></path>
+            <g id="logo-fruit">
+              <path d="M0 -3Q-1 4 0 10" fill="none" stroke="#aa804d" stroke-width="4" stroke-linecap="round"></path>
+              <path d="M0 7C-8 5 -13 12 -12 19C-11 28 -4 32 0 30C4 32 11 28 12 19C13 12 8 5 0 7Z" fill="currentColor"></path>
+            </g>
+          </defs>
+          <g transform="translate(223 65) rotate(-48)">
+            <use class="logo-leaf" href="#logo-leaf" fill="#6db59e"></use>
+          </g>
+          <g transform="translate(272 62) rotate(-14)">
+            <use class="logo-leaf" href="#logo-leaf" fill="#9acaa7"></use>
+          </g>
+          <g transform="translate(288 62) rotate(40)">
+            <use class="logo-leaf" href="#logo-leaf" fill="#64ae92"></use>
+          </g>
+          <g transform="translate(335 89) rotate(30)">
+            <use class="logo-leaf" href="#logo-leaf" fill="#9acaa7"></use>
+          </g>
+          <g transform="translate(370 99) rotate(36)">
+            <use class="logo-leaf" href="#logo-leaf" fill="#6db59e"></use>
+          </g>
+          <g transform="translate(391 110) rotate(64)">
+            <use class="logo-leaf" href="#logo-leaf" fill="#90c9b5"></use>
+          </g>
+          <g transform="translate(326 183) rotate(48)">
+            <use class="logo-leaf" href="#logo-leaf" fill="#75bba3"></use>
+          </g>
+          <g transform="translate(335 210) rotate(100)">
+            <use class="logo-leaf" href="#logo-leaf" fill="#9acaa7"></use>
+          </g>
+          <g transform="translate(259 92) rotate(-44) scale(.78)">
+            <use class="logo-leaf" href="#logo-leaf" fill="#82bc9b"></use>
+          </g>
+          <g transform="translate(320 129) rotate(-18) scale(.8)">
+            <use class="logo-leaf" href="#logo-leaf" fill="#78bba3"></use>
+          </g>
+          <g transform="translate(278 167) rotate(40) scale(.8)">
+            <use class="logo-leaf" href="#logo-leaf" fill="#90c9b5"></use>
+          </g>
+          <g transform="translate(272 146) rotate(-80) scale(.78)">
+            <use class="logo-leaf" href="#logo-leaf" fill="#82bc9b"></use>
+          </g>
+          <g transform="translate(244 79) rotate(-27)">
+            <use class="logo-fruit" href="#logo-fruit" color="#d7a65f"></use>
+          </g>
+          <g transform="translate(354 117) rotate(-12)">
+            <use class="logo-fruit" href="#logo-fruit" color="#d4838b"></use>
+          </g>
+          <g transform="translate(288 200) rotate(12)">
+            <use class="logo-fruit" href="#logo-fruit" color="#a696cf"></use>
+          </g>
+        </svg>
       </a>
 
       <div class="nav-actions">
@@ -129,30 +183,32 @@
       </div>
     </section>
 
-    <section class="section contact-section" id="contact" data-nosnippet>
+    <section class="section" id="contact" data-nosnippet>
       <div class="section-heading">
         <h2 data-i18n="contact.title"></h2>
       </div>
-      <div>
-        <h3 data-i18n="contact.inPerson"></h3>
-        <p class="lead" data-i18n="contact.booking"></p>
-        <div class="cta-row booking-actions">
-          <a class="button primary direct-call" data-content-attr="href:contacts.phone" data-prefix="tel:" data-i18n="contact.callMe"></a>
-          <a class="button" data-content-attr="href:contacts.centerTel" data-i18n="contact.callCenter"></a>
+      <div class="contact-panel">
+        <div>
+          <h3 data-i18n="contact.inPerson"></h3>
+          <p class="lead" data-i18n="contact.booking"></p>
+          <div class="cta-row booking-actions">
+            <a class="button primary direct-call" data-content-attr="href:contacts.phone" data-prefix="tel:" data-i18n="contact.callMe"></a>
+            <a class="button" data-content-attr="href:contacts.centerTel" data-i18n="contact.callCenter"></a>
+          </div>
         </div>
-      </div>
-      <div>
-        <h3 data-i18n="contact.remote"></h3>
-        <p class="lead" data-i18n="contact.remoteIntro"></p>
+        <div>
+          <h3 data-i18n="contact.remote"></h3>
+          <p class="lead" data-i18n="contact.remoteIntro"></p>
+          <div class="button-row">
+            <a class="button" data-content-attr="href:contacts.telegramUrl" target="_blank" rel="noopener"><img class="service-icon" src="img/icons/telegram.svg" width="22" height="22" alt="" /><span data-i18n="contact.telegram"></span></a>
+            <a class="button" data-content-attr="href:contacts.email" data-prefix="mailto:"><img class="service-icon" src="img/icons/email.svg" width="22" height="22" alt="" /><span data-i18n="contact.email"></span></a>
+          </div>
+        </div>
         <div class="button-row">
-          <a class="button" data-content-attr="href:contacts.telegramUrl" target="_blank" rel="noopener"><img class="service-icon" src="img/icons/telegram.svg" width="22" height="22" alt="" /><span data-i18n="contact.telegram"></span></a>
-          <a class="button" data-content-attr="href:contacts.email" data-prefix="mailto:"><img class="service-icon" src="img/icons/email.svg" width="22" height="22" alt="" /><span data-i18n="contact.email"></span></a>
+          <a class="button" data-vcard download rel="nofollow" data-i18n-attr="title:contact.vcardTooltip"><img class="service-icon" src="img/icons/contacts.svg" width="22" height="22" alt="" /><span data-i18n="contact.vcard"></span></a>
         </div>
+        <p class="remote-notice" data-i18n="contact.remoteNotice"></p>
       </div>
-      <div class="button-row">
-        <a class="button" data-vcard download rel="nofollow" data-i18n-attr="title:contact.vcardTooltip"><img class="service-icon" src="img/icons/contacts.svg" width="22" height="22" alt="" /><span data-i18n="contact.vcard"></span></a>
-      </div>
-      <p class="remote-notice" data-i18n="contact.remoteNotice"></p>
     </section>
 
     <div class="section emergency-notice">

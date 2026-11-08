@@ -11,7 +11,9 @@
 
 * { box-sizing: border-box; }
 [hidden] { display: none !important; }
-html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: no-preference) {
+  html { scroll-behavior: smooth; }
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
@@ -50,6 +52,18 @@ code { background: #ede8df; padding: 0.1rem 0.35rem; border-radius: 0.35rem; }
 }
 
 .logo img { display: block; width: 100%; height: auto; }
+.logo img, .logo-season { grid-area: 1 / 1; }
+.logo-season {
+  display: none;
+  width: 100%;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .js .logo-season { display: block; }
+  .logo-leaf { transform: scale(var(--logo-leaves, 0)); }
+  .logo-fruit { transform: scale(var(--logo-fruits, 0)); }
+}
 
 .nav-menu { display: flex; gap: 1.25rem; align-items: center; }
 .nav-menu a { text-decoration: none; color: var(--muted); font-weight: 600; }
@@ -77,7 +91,7 @@ code { background: #ede8df; padding: 0.1rem 0.35rem; border-radius: 0.35rem; }
 }
 
 h1, h2, h3 { line-height: 1.12; margin: 0; }
-h1 { font-size: clamp(3.2rem, 8vw, 6.5rem); letter-spacing: -0.06em; }
+h1 { font-size: clamp(3.2rem, 8vw, 6.5rem); }
 h2 { font-size: clamp(2rem, 4vw, 3.2rem); letter-spacing: -0.04em; }
 h3 { font-size: 1.25rem; }
 
@@ -94,11 +108,12 @@ h3 { font-size: 1.25rem; }
   border-radius: 999px;
   border: 1px solid var(--line);
   background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 3px 10px rgba(20, 33, 61, 0.12);
   text-decoration: none;
   font-weight: 700;
 }
 .button.primary { background: var(--accent); color: white; border-color: var(--accent); }
-.button:hover { transform: translateY(-1px); box-shadow: 0 10px 30px rgba(20, 33, 61, 0.08); }
+.button:hover { transform: translateY(-1px); box-shadow: 0 6px 16px rgba(20, 33, 61, 0.16); }
 
 .hero-card {
   background: var(--card);
@@ -111,6 +126,27 @@ h3 { font-size: 1.25rem; }
 .muted { color: var(--muted); }
 
 .section-heading { margin-bottom: 28px; }
+#expertise .section-heading { --heading-line-color: var(--accent); }
+#about .section-heading { --heading-line-color: #8c6b4d; }
+#experience .section-heading { --heading-line-color: #496586; }
+#patients .section-heading { --heading-line-color: #537454; }
+#contact .section-heading { --heading-line-color: var(--accent-dark); }
+#projects .section-heading { --heading-line-color: #795d76; }
+#publications .section-heading { --heading-line-color: var(--text); }
+
+.section-heading h2 {
+  position: relative;
+  width: fit-content;
+}
+.section-heading h2::after {
+  content: "";
+  position: absolute;
+  inset-inline: 0;
+  bottom: -12px;
+  height: 2px;
+  border-radius: 1px;
+  background: var(--heading-line-color, var(--accent));
+}
 .grid { display: grid; gap: 18px; }
 .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .card, .contact-item, .link-list a {
@@ -216,26 +252,25 @@ h3 { font-size: 1.25rem; }
   .booking-actions .button { width: 66%; text-align: center; }
 }
 
-.section + .section:not(.contact-section) {
+.section + .section {
   border-top: 1px solid var(--line);
 }
 
-.section.contact-section {
-  margin-block: 16px 40px;
+.contact-panel {
   padding: clamp(24px, 5vw, 56px);
   border: 1px solid #cfe2db;
   border-radius: 28px;
   background: #edf6f2;
 }
 
-.contact-section .booking-actions {
+.contact-panel .booking-actions {
   margin-bottom: 24px;
   padding-bottom: 24px;
   border-bottom: 1px solid #cfe2db;
 }
 
 @media (max-width: 820px) {
-  .section + .section:not(.contact-section) { padding-block: 48px; }
+  .section + .section { padding-block: 48px; }
 }
 
 @media (width > 820px) {
@@ -288,16 +323,40 @@ h3 { font-size: 1.25rem; }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .scroll-entered { animation: scroll-enter 650ms ease-out; }
-  .visit-process .scroll-entered::after { animation: visit-connect 600ms ease-out; }
+  .hero-content, .hero-card {
+    animation: hero-enter 650ms cubic-bezier(0.2, 0.65, 0.3, 1) both;
+  }
+
+  .hero-card { animation-delay: 110ms; }
+  .hero-content:focus-within { animation: none; }
+
+  .section-heading h2::after {
+    transform-origin: left;
+    transform: scaleX(var(--heading-line-progress, 1));
+  }
+
+  .scroll-entered {
+    animation: scroll-enter 480ms cubic-bezier(0.2, 0.65, 0.3, 1) backwards;
+  }
+
+  .visit-process .scroll-entered::after { animation: visit-connect 480ms ease-out; }
+  .scroll-entered:focus-within { animation: none; }
+
+  @keyframes hero-enter {
+    from { opacity: 0.12; translate: 0 16px; }
+  }
 
   @keyframes scroll-enter {
-    from { opacity: 0.55; translate: 0 8px; }
+    from { opacity: 0.72; translate: 0 8px; }
   }
 
   @keyframes visit-connect {
     from { transform: scaleY(0); }
   }
+}
+
+@media (width > 820px) and (prefers-reduced-motion: no-preference) {
+  #expertise .card:nth-child(even).scroll-entered { animation-delay: 65ms; }
 }
 
 .remote-notice {
