@@ -32,7 +32,7 @@
         "vcardButton": "Зберегти контакт",
         "youtubeButton": "YouTube",
         "cardNote": null,
-        "photoAlt": "Профільне фото Дениса Федорова",
+        "photoAlt": "Федоров Денис, гепатобіліарний хірург, трансплантолог",
         "summary": "Консультація з приводу метастазів і первинних пухлин печінки та підшлункової залози."
       },
       "about": {
@@ -41,6 +41,17 @@
         "lead": "Я — Федоров Денис, **гепатобіліарний хірург**, кандидат медичних наук і провідний науковий співробітник ННЦХТ імені О.О. Шалімова в Києві.",
         "text": "Мій основний напрям — хірургічне лікування **первинних злоякісних пухлин і метастазів у печінці**. Також консультую пацієнтів із **доброякісними новоутвореннями печінки**, зокрема гемангіомами, аденомами та фокальною нодулярною гіперплазією. Виконую **лапароскопічні та відкриті резекції** печінки й підшлункової залози, а також втручання на інших органах гепатобіліарної зони. Консультую пацієнтів із пухлинами підшлункової залози.",
         "consultation": "На консультації ми переглядаємо результати обстежень і обговорюємо, чи можна розглядати операцію у вашому випадку. Якщо для рішення потрібні додаткові обстеження або консультації інших фахівців, пояснюю, які саме й навіщо. Наприкінці обговорюємо наступний крок."
+      },
+      "experience": {
+        "title": "Навчання та досвід",
+        "training": "У 2004 році закінчив лікувальний факультет **НМУ імені О.О. Богомольця**. У 2014 році захистив дисертацію на тему «**Реконструкція вен при трансплантації лівої латеральної секції печінки від живого родинного донора**» та здобув науковий ступінь кандидата медичних наук.",
+        "fellowshipsTitle": "Міжнародні стажування",
+        "fellowships": {
+          "korea": "2015 · Південна Корея, Сеул — стажування в клініці Asan.",
+          "france": "2017 · Франція — навчання в Paul Brousse Hospital.",
+          "japan": "2019 · Японія — стажування в New Tokyo Hospital і Tokyo Women’s University Hospital."
+        },
+        "practice": "Маю досвід **понад 500 лапароскопічних резекцій печінки**. Автор **понад 50 наукових статей**. Є членом Асоціації хірургів України та Міжнародного товариства лапароскопічної хірургії печінки (ILLS)."
       },
       "expertise": {
         "eyebrow": "Clinical expertise",
@@ -58,8 +69,8 @@
           "text": "**Гемангіоми** — доброякісні судинні утворення. **Аденоми** — доброякісні пухлини з клітин печінки. **Фокальна нодулярна гіперплазія (ФНГ)** — доброякісне вузлове розростання тканини печінки. **Ехінококові кісти** спричинені паразитом, а **цистаденоми** належать до кістозних пухлин."
         },
         "pancreaticTumors": {
-          "title": "Пухлини підшлункової залози",
-          "text": "**Рак підшлункової залози** — злоякісна пухлина. **Нейроендокринні пухлини** виникають із клітин, які виробляють гормони. **Кістозні утворення** мають одну або кілька порожнин із рідиною."
+          "title": "Новоутворення підшлункової залози",
+          "text": "**Аденокарцинома підшлункової залози** — первинна злоякісна пухлина. **Нейроендокринні пухлини** виникають із клітин, які виробляють гормони. **Кістозні утворення** мають одну або кілька порожнин із рідиною."
         },
         "obstructiveJaundice": {
           "title": "Механічна жовтяниця",
@@ -84,7 +95,7 @@
       },
       "publications": {
         "eyebrow": "Academic profiles",
-        "title": "Наукова діяльність",
+        "title": "Наукові публікації",
         "note": null
       },
       "contact": {
@@ -102,7 +113,7 @@
         "remoteIntro": "Якщо ви знаходитесь за кордоном або не можете приїхати в Київ з інших причин, коротко опишіть вашу ситуацію в Telegram або електронною поштою. Я підкажу, які документи й знімки надіслати.",
         "callMe": "Зателефонувати напряму",
         "remoteNotice": "Заочна консультація через Telegram або електронну пошту має інформаційний характер і є попереднім обговоренням вашого випадку. За результатами такого обговорення лікування не призначається, медичний висновок не видається. Листування не має сили офіційного медичного висновку й не замінює очну консультацію.",
-        "emergencyNotice": "**У невідкладній ситуації негайно викликайте швидку.** В Україні телефонуйте 103. За кордоном телефонуйте за місцевим номером екстреної допомоги."
+        "emergencyNotice": "**Ургентні консультації не надаються — у невідкладній ситуації негайно викликайте швидку.** \nВ Україні телефонуйте 103. За кордоном телефонуйте за місцевим номером екстреної допомоги."
       },
       "footer": {
         "rights": "Усі права захищені."
@@ -152,6 +163,17 @@
         "lead": "I am Denys Fedorov, a **hepatobiliary surgeon**, Candidate of Medical Sciences and Lead Researcher at the O.O. Shalimov National Scientific Center of Surgery and Transplantation in Kyiv.",
         "text": "My main focus is surgery for **primary liver cancers and liver metastases**. I also see patients with **benign liver lesions**, including hemangiomas, adenomas and focal nodular hyperplasia. I perform **laparoscopic and open liver and pancreatic resections**, as well as other procedures in the hepatobiliary region. I also see patients with pancreatic tumors.",
         "consultation": "During your consultation, we review your test results and discuss whether surgery may be an option for you. If further tests or specialist consultations are needed, I explain which ones and why. We then discuss the next step."
+      },
+      "experience": {
+        "title": "Training and experience",
+        "training": "I graduated from the Faculty of Medicine at **Bogomolets National Medical University** in 2004. In 2014, I defended my dissertation, “**Venous Reconstruction in Left Lateral Section Liver Transplantation from a Living Related Donor**,” and earned the degree of Candidate of Medical Sciences.",
+        "fellowshipsTitle": "International training",
+        "fellowships": {
+          "korea": "2015 · Seoul, South Korea — training at Asan.",
+          "france": "2017 · France — training at Paul Brousse Hospital.",
+          "japan": "2019 · Japan — training at New Tokyo Hospital and Tokyo Women’s University Hospital."
+        },
+        "practice": "I have personally performed **more than 500 laparoscopic liver resections**. I have authored **more than 50 scientific articles**. I am a member of the Association of Surgeons of Ukraine and the International Laparoscopic Liver Society (ILLS)."
       },
       "expertise": {
         "eyebrow": "Clinical expertise",
@@ -270,7 +292,7 @@
     "googleScholar": "https://scholar.google.com.ua/citations?user=aCyZ5_kAAAAJ&hl=ua",
     "researchGate": "https://www.researchgate.net/profile/Denys-Fedorov",
     "scopus": "https://www.scopus.com/authid/detail.uri?authorId=18434085100",
-    "center": "https://www.surgery.org.ua/"
+    "center": "https://www.surgery.org.ua/Employees/Details/028f20c8-ad87-4606-83ba-ac18074aa78d?tId=64b64d04-6d35-46ae-b277-e32ce38dcce3"
   },
   "contacts": {
     "email": "fedorov.consultation@gmail.com",

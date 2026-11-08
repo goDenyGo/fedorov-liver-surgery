@@ -323,3 +323,20 @@ h3 { font-size: 1.25rem; }
 
 .emergency-notice p { margin: 0; }
 .emergency-notice img { flex: none; }
+
+.fellowship-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 8px;
+}
+
+.fellowship-list li {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.fellowship-list [aria-hidden="true"] {
+  flex: 0 0 1.5em;
+}
