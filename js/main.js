@@ -11,3 +11,17 @@ if (toggle && menu) {
     toggle.setAttribute('aria-expanded', 'false');
   }));
 }
+
+const revealItems = document.querySelectorAll('.visit-process li, #expertise .card');
+if ('IntersectionObserver' in window &&
+    window.matchMedia('(prefers-reduced-motion: no-preference)').matches) {
+  const observer = new IntersectionObserver(entries => {
+    for (const entry of entries) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('scroll-entered');
+        observer.unobserve(entry.target);
+      }
+    }
+  }, { rootMargin: '0px 0px -15% 0px' });
+  revealItems.forEach(item => observer.observe(item));
+}

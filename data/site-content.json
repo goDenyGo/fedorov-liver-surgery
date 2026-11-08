@@ -99,8 +99,10 @@
         "inPerson": "Очна консультація в Києві",
         "callCenter": "Записатись через поліклініку",
         "remote": "Заочна консультація за документами",
-        "remoteIntro": "Коротко опишіть вашу ситуацію в Telegram або електронною поштою. Я підкажу, які документи й знімки надіслати.",
-        "callMe": "Зателефонувати мені"
+        "remoteIntro": "Якщо ви знаходитесь за кордоном або не можете приїхати в Київ з інших причин, коротко опишіть вашу ситуацію в Telegram або електронною поштою. Я підкажу, які документи й знімки надіслати.",
+        "callMe": "Зателефонувати напряму",
+        "remoteNotice": "Заочна консультація через Telegram або електронну пошту має інформаційний характер і є попереднім обговоренням вашого випадку. За результатами такого обговорення лікування не призначається, медичний висновок не видається. Листування не має сили офіційного медичного висновку й не замінює очну консультацію.",
+        "emergencyNotice": "**У невідкладній ситуації негайно викликайте швидку.** В Україні телефонуйте 103. За кордоном телефонуйте за місцевим номером екстреної допомоги."
       },
       "footer": {
         "rights": "Усі права захищені."
@@ -110,8 +112,8 @@
         "intro": "Зберіть матеріали обстежень і лікування, які вже маєте.",
         "imaging": "**КТ і МРТ.** Підготуйте флешку або диск із повними знімками КТ чи МРТ (файли DICOM). Якщо їх немає, попросіть копію в центрі, де проходили обстеження.",
         "records": "**Висновки й виписки.** Підготуйте оригінали або чіткі цифрові копії описів КТ і МРТ, виписок зі стаціонару, результатів аналізів та гістологічних висновків, якщо вони є.",
-        "questions": "**Інші дані.** Коротко зазначте, коли виявили проблему, яке лікування вже отримали та які ліки приймаєте зараз. Запишіть запитання до хірурга.",
-        "chronology": "За можливості розкладіть документи й дослідження за датами, від найдавніших до найновіших. У назвах цифрових файлів або папок зазначте дату й тип документа чи дослідження.",
+        "questions": "**Сформулюйте головне питання.** Коротко занотуйте, коли виявили проблему, яке лікування вже було та які ліки приймаєте. Подумайте, що саме ви хочете з’ясувати на консультації. Наприклад, «Чи можна розглядати операцію в моєму випадку?» або «Що мені робити далі?»",
+        "chronology": "**Розкладіть матеріали за датами.** За можливості розкладіть документи й дослідження за датами, від найдавніших до найновіших. У назвах цифрових файлів або папок зазначте дату й тип документа чи дослідження.",
         "pathology": "**Гістологічні скельця й парафінові блоки.** Якщо вам робили біопсію або операцію, ці матеріали часто потрібні, щоб наші гістологи повторно переглянули зразки."
       }
     },
@@ -209,7 +211,9 @@
         "callCenter": "Book through the clinic",
         "remote": "Remote review of medical records",
         "remoteIntro": "Briefly describe your situation on Telegram or by email. I’ll let you know which records and scans to send.",
-        "callMe": "Call me"
+        "callMe": "Call me",
+        "remoteNotice": "A remote consultation via Telegram or email is an initial discussion of your case for information only. No treatment is prescribed or medical report issued through this exchange. The correspondence has no standing as a formal medical report and does not replace an in-person consultation.",
+        "emergencyNotice": "**In a medical emergency, call emergency services immediately.** In Ukraine, dial 103. Elsewhere, call your local emergency number."
       },
       "footer": {
         "rights": "All rights reserved."
@@ -219,8 +223,8 @@
         "intro": "Gather the records and imaging you already have.",
         "imaging": "**CT and MRI.** Prepare a USB drive or disc with the complete CT or MRI scans (DICOM files). If you don’t have them, ask the imaging center for a copy.",
         "records": "**Reports and discharge summaries.** Prepare originals or clear digital copies of CT and MRI reports, hospital discharge summaries, lab results and any pathology reports.",
-        "questions": "**Other details.** Note when the problem was found, what treatment you have received and what medications you currently take. Write down any questions for the surgeon.",
-        "chronology": "If possible, arrange your records and scans by date, from oldest to newest. Include the date and the type of document or scan in each digital file or folder name.",
+        "questions": "**Write down your main question.** Briefly note when the problem was found, what treatment you’ve received and what medications you take. Think about what you most want to find out at the consultation. For example, “Could surgery be an option for me?” or “What should I do next?”",
+        "chronology": "**Sort your records by date.** If possible, arrange your records and scans by date, from oldest to newest. Include the date and the type of document or scan in each digital file or folder name.",
         "pathology": "**Pathology slides and paraffin blocks.** If you’ve had a biopsy or surgery, our pathologists often need these materials to review your samples."
       }
     }

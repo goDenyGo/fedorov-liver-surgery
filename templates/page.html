@@ -103,13 +103,13 @@
         <h2 data-i18n="patients.title"></h2>
       </div>
       <p class="lead" data-i18n="patients.intro"></p>
-      <ul class="visit-checklist">
+      <ol class="visit-process" role="list">
         <li data-i18n="patients.imaging" data-allow-strong></li>
         <li data-i18n="patients.records" data-allow-strong></li>
         <li data-i18n="patients.pathology" data-allow-strong></li>
+        <li data-i18n="patients.chronology" data-allow-strong></li>
         <li data-i18n="patients.questions" data-allow-strong></li>
-      </ul>
-      <p data-i18n="patients.chronology"></p>
+      </ol>
       <div class="cta-row">
         <a class="button primary" href="#contact" data-i18n="hero.contactButton"></a>
       </div>
@@ -138,7 +138,13 @@
       <div class="button-row">
         <a class="button" data-vcard download rel="nofollow" data-i18n-attr="title:contact.vcardTooltip"><img class="service-icon" src="img/icons/contacts.svg" width="22" height="22" alt="" /><span data-i18n="contact.vcard"></span></a>
       </div>
+      <p class="remote-notice" data-i18n="contact.remoteNotice"></p>
     </section>
+
+    <div class="section emergency-notice">
+      <p data-i18n="contact.emergencyNotice" data-allow-strong></p>
+      <img src="img/icons/warning.svg" width="36" height="36" alt="" />
+    </div>
 
     <section class="section" id="projects">
       <div class="section-heading">

@@ -185,8 +185,6 @@ h3 { font-size: 1.25rem; }
 }
 .cta-row { align-items: center; }
 .secondary-link { color: var(--accent-dark); font-weight: 700; text-underline-offset: 0.2em; }
-.visit-checklist { padding-inline-start: 1.5rem; }
-.visit-checklist li + li { margin-top: 0.5rem; }
 .booking-actions { margin-bottom: 24px; }
 
 .hero h1:lang(uk) { font-size: clamp(2.25rem, 7vw, 6rem); }
@@ -247,3 +245,81 @@ h3 { font-size: 1.25rem; }
     white-space: pre-line;
   }
 }
+
+.visit-process {
+  max-width: 800px;
+  list-style: none;
+  padding: 0;
+  counter-reset: visit-step;
+}
+
+.visit-process li {
+  position: relative;
+  min-height: 40px;
+  padding: 0 0 24px 56px;
+  counter-increment: visit-step;
+}
+
+.visit-process li:last-child { padding-bottom: 0; }
+
+.visit-process li::before {
+  content: counter(visit-step);
+  position: absolute;
+  inset: 0 auto auto 0;
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--accent-dark);
+  color: white;
+  font-weight: 700;
+}
+
+.visit-process li:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 40px;
+  bottom: 0;
+  left: 19px;
+  width: 2px;
+  background: var(--accent);
+  transform-origin: top;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .scroll-entered { animation: scroll-enter 650ms ease-out; }
+  .visit-process .scroll-entered::after { animation: visit-connect 600ms ease-out; }
+
+  @keyframes scroll-enter {
+    from { opacity: 0.55; translate: 0 8px; }
+  }
+
+  @keyframes visit-connect {
+    from { transform: scaleY(0); }
+  }
+}
+
+.remote-notice {
+  margin: 20px 0 0;
+  padding-top: 12px;
+  border-top: 1px solid #cfe2db;
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+.section.emergency-notice {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  margin-block: -24px 40px;
+  padding: 16px 20px;
+  border: 1px solid #ead1a0;
+  border-radius: 16px;
+  background: #fff4df;
+  color: #633a0e;
+}
+
+.emergency-notice p { margin: 0; }
+.emergency-notice img { flex: none; }
