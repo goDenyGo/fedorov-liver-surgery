@@ -1,9 +1,10 @@
 :root {
-  --bg: #f5f8f7;
+  --bg: #faf7f1;
   --text: #18383e;
   --muted: #4e686d;
   --card: #ffffff;
-  --line: #d8e4e4;
+  --line: #e9ddcc;
+  --copper: #a66b52;
   --accent: #1F6F78;
   --accent-dark: #164f57;
   --accent-line: #c8dedf;
@@ -24,7 +25,7 @@ body {
   padding-top: var(--header-height);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
   color: var(--text);
-  background: radial-gradient(circle at top left, #ffffff 0, var(--bg) 45%);
+  background: var(--bg);
   line-height: 1.6;
 }
 
@@ -38,7 +39,7 @@ code { background: #e8efee; padding: 0.1rem 0.35rem; border-radius: 0.35rem; }
   inset-inline: 0;
   z-index: 10;
   transform: translateZ(0);
-  background: var(--bg);
+  background: var(--card);
   border-bottom: 1px solid var(--line);
 }
 
@@ -109,6 +110,14 @@ code { background: #e8efee; padding: 0.1rem 0.35rem; border-radius: 0.35rem; }
 
 h1, h2, h3 { line-height: 1.12; margin: 0; }
 h1 { font-size: clamp(3.2rem, 8vw, 6.5rem); }
+.hero h1::before {
+  content: "";
+  display: block;
+  width: 44px;
+  height: 3px;
+  margin-bottom: 16px;
+  background: var(--copper);
+}
 h2 { font-size: clamp(2rem, 4vw, 3.2rem); letter-spacing: -0.04em; }
 h3 { font-size: 1.25rem; }
 
@@ -144,7 +153,7 @@ h3 { font-size: 1.25rem; }
 
 .section-heading { margin-bottom: 28px; }
 #expertise .section-heading { --heading-line-color: var(--accent); }
-#about .section-heading { --heading-line-color: #80664d; }
+#about .section-heading { --heading-line-color: var(--copper); }
 #experience .section-heading { --heading-line-color: #4c697f; }
 #patients .section-heading { --heading-line-color: #51745f; }
 #contact .section-heading { --heading-line-color: var(--accent-dark); }
