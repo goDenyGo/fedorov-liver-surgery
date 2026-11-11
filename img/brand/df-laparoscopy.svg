@@ -1,11 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title">
   <title id="title">DF — лапароскопічна хірургія печінки</title>
-  <path fill="#14213d" d="M8 66c0-24 13-40 34-41 13-1 21 6 34 7 11 1 23-4 34-3 8 1 12 6 9 13-8 21-25 38-46 46-9 3-17 4-25 9-7 4-14 7-22 4C14 97 8 84 8 66Z"/>
+  <path fill="#1F6F78" d="M8 66c0-24 13-40 34-41 13-1 21 6 34 7 11 1 23-4 34-3 8 1 12 6 9 13-8 21-25 38-46 46-9 3-17 4-25 9-7 4-14 7-22 4C14 97 8 84 8 66Z"/>
   <path fill="#fff" fill-rule="evenodd" d="M23 45h12c12 0 19 7 19 17s-7 17-19 17H23V45Zm8 7v20h4c7 0 11-4 11-10s-4-10-11-10h-4Z"/>
   <path fill="#fff" d="M59 45h24v7H67v7h13v7H67v13h-8V45Z"/>
   <g fill="none" stroke-linecap="round" stroke-linejoin="round">
     <path stroke="#fff" stroke-width="12" d="m99 72 18 24"/>
-    <path stroke="#0f766e" stroke-width="7" d="m99 72 18 24"/>
+    <path stroke="#1F6F78" stroke-width="7" d="m99 72 18 24"/>
     <path stroke="#fff" stroke-width="4" d="m86 71 13 1-4-13"/>
   </g>
 </svg>
