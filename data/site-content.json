@@ -13,6 +13,7 @@
       },
       "nav": {
         "menu": "Меню",
+        "skipToContent": "Перейти до основного вмісту",
         "about": "Про мене",
         "expertise": "Напрями",
         "projects": "Проєкти",
@@ -145,6 +146,7 @@
       },
       "nav": {
         "menu": "Menu",
+        "skipToContent": "Skip to main content",
         "about": "About",
         "expertise": "Expertise",
         "projects": "Projects",

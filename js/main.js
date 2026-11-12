@@ -3,13 +3,20 @@ document.documentElement.classList.add('js');
 const toggle = document.querySelector('.nav-toggle');
 const menu = document.querySelector('#nav-menu');
 if (toggle && menu) {
+  function closeMenu() {
+    menu.classList.remove('open');
+    toggle.setAttribute('aria-expanded', 'false');
+  }
+
   toggle.addEventListener('click', () => {
     toggle.setAttribute('aria-expanded', String(menu.classList.toggle('open')));
   });
-  menu.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
-    menu.classList.remove('open');
-    toggle.setAttribute('aria-expanded', 'false');
-  }));
+  menu.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
+  toggle.closest('.nav').addEventListener('keydown', event => {
+    if (event.key !== 'Escape' || !menu.classList.contains('open')) return;
+    closeMenu();
+    toggle.focus();
+  });
 }
 
 const motion = window.matchMedia('(prefers-reduced-motion: no-preference)');

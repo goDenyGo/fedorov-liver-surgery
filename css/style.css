@@ -22,7 +22,6 @@ html { scroll-padding-top: var(--header-height); }
 }
 body {
   margin: 0;
-  padding-top: var(--header-height);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
   color: var(--text);
   background: var(--bg);
@@ -31,14 +30,25 @@ body {
 
 a { color: inherit; }
 :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.skip-link {
+  position: fixed;
+  z-index: 11;
+  inset: 8px auto auto 16px;
+  max-width: calc(100% - 32px);
+  padding: 8px 14px;
+  border-radius: 12px;
+  background: var(--card);
+  color: var(--accent-dark);
+  font-weight: 700;
+  transform: translateY(calc(-100% - 16px));
+}
+.skip-link:focus { transform: none; }
 code { background: #e8efee; padding: 0.1rem 0.35rem; border-radius: 0.35rem; }
 
 .site-header {
-  position: fixed;
+  position: sticky;
   top: 0;
-  inset-inline: 0;
   z-index: 10;
-  transform: translateZ(0);
   background: var(--card);
   border-bottom: 1px solid var(--line);
 }
@@ -109,6 +119,7 @@ code { background: #e8efee; padding: 0.1rem 0.35rem; border-radius: 0.35rem; }
 }
 
 h1, h2, h3 { line-height: 1.12; margin: 0; }
+h1, h2, h3 { overflow-wrap: anywhere; }
 h1 { font-size: clamp(3.2rem, 8vw, 6.5rem); }
 .hero h1::before {
   content: "";
@@ -121,8 +132,8 @@ h1 { font-size: clamp(3.2rem, 8vw, 6.5rem); }
 h2 { font-size: clamp(2rem, 4vw, 3.2rem); letter-spacing: -0.04em; }
 h3 { font-size: 1.25rem; }
 
-.subtitle { font-size: clamp(1.4rem, 2vw, 2rem); color: var(--accent-dark); font-weight: 700; margin: 20px 0 8px; }
-.institution, .lead { font-size: 1.18rem; color: var(--muted); max-width: 760px; }
+.subtitle { font-size: clamp(1.4rem, 2vw, 2rem); color: var(--accent-dark); font-weight: 700; margin: 20px 0 8px; overflow-wrap: anywhere; }
+.institution, .lead { font-size: 1.18rem; color: var(--muted); max-width: 760px; overflow-wrap: anywhere; }
 
 .cta-row, .button-row { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
 .button {
@@ -137,6 +148,8 @@ h3 { font-size: 1.25rem; }
   box-shadow: 0 3px 10px rgba(24, 56, 62, 0.12);
   text-decoration: none;
   font-weight: 700;
+  max-width: 100%;
+  overflow-wrap: anywhere;
 }
 .button.primary { background: var(--accent); color: white; border-color: var(--accent); }
 .button:hover { transform: translateY(-1px); box-shadow: 0 6px 16px rgba(24, 56, 62, 0.16); }
@@ -219,8 +232,13 @@ h3 { font-size: 1.25rem; }
 @media (max-width: 820px) {
   .nav-toggle { display: inline-flex; border: 1px solid var(--line); background: white; border-radius: 999px; padding: 8px 14px; }
   .nav-menu { display: none; position: absolute; top: var(--nav-height); left: 16px; right: 16px; flex-direction: column; background: white; padding: 18px; border: 1px solid var(--line); border-radius: 18px; box-shadow: var(--shadow); }
-  .nav-menu.open { display: flex; }
-  .hero { grid-template-columns: 1fr; padding-top: 48px; }
+  .nav-menu.open {
+    display: flex;
+    max-height: calc(100dvh - var(--nav-height) - 16px);
+    overflow-y: auto;
+    overflow-wrap: anywhere;
+  }
+  .hero { grid-template-columns: minmax(0, 1fr); padding-top: 48px; }
   .cards, .contact-grid { grid-template-columns: 1fr; }
   .link-list a, .contact-item { flex-direction: column; align-items: flex-start; }
 }
@@ -237,7 +255,6 @@ h3 { font-size: 1.25rem; }
 .lang-button { display: inline-flex; align-items: center; justify-content: center; text-decoration: none; }
 @media (max-width: 820px) {
   html:not(.js) { scroll-padding-top: 0; }
-  html:not(.js) body { padding-top: 0; }
   html:not(.js) .site-header { position: static; }
   html:not(.js) .nav { flex-wrap: wrap; }
   html:not(.js) .nav-menu { display: flex; position: static; width: 100%; box-shadow: none; }
@@ -273,6 +290,7 @@ h3 { font-size: 1.25rem; }
 }
 
 .institution-link:hover span { text-decoration: underline; }
+.institution-link span { overflow-wrap: anywhere; }
 .institution-link img { width: 44px; height: 44px; flex: 0 0 44px; }
 
 .direct-call {
@@ -281,10 +299,11 @@ h3 { font-size: 1.25rem; }
 }
 
 @media (max-width: 820px) {
-  .button { white-space: nowrap; }
   .booking-actions {
     display: grid;
-    grid-template-columns: minmax(66%, max-content);
+    width: fit-content;
+    min-width: 66%;
+    max-width: 100%;
   }
   .booking-actions .button {
     min-width: 0;
