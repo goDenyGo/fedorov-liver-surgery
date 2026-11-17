@@ -42,6 +42,10 @@ class Parser(HTMLParser):
 def serialize(node):
     if isinstance(node, str):
         return escape(node, quote=False)
+    if node.tag == 'script' and node.attrs.get('type') == 'application/ld+json':
+        return '<script type="application/ld+json">' + json.dumps(
+            node.children[0], ensure_ascii=False
+        ).replace('<', r'\u003c').replace('>', r'\u003e').replace('&', r'\u0026') + '</script>'
     children = ''.join(map(serialize, node.children))
     if node.tag == 'root':
         return '<!DOCTYPE html>\n' + children
@@ -86,6 +90,7 @@ def render(content, template, language):
     for attr, name, text in [
         ('name', 'description', description), ('name', 'author', content['site']['copyrightName']),
         ('property', 'og:title', title), ('property', 'og:description', description),
+        ('property', 'og:site_name', content['site']['name']),
         ('property', 'og:type', 'website'), ('property', 'og:url', canonical),
         ('property', 'og:image', image), ('property', 'og:image:alt', image_alt),
         ('property', 'og:image:width', '1200'), ('property', 'og:image:height', '1500'),
@@ -94,6 +99,14 @@ def render(content, template, language):
         ('name', 'twitter:description', description), ('name', 'twitter:image', image),
         ('name', 'twitter:image:alt', image_alt)]:
         metadata.append(Element('meta', [(attr, name), ('content', text)]))
+    website = Element('script', [('type', 'application/ld+json')])
+    website.children = [{
+        '@context': 'https://schema.org',
+        '@type': 'WebSite',
+        'name': content['site']['name'],
+        'url': base,
+    }]
+    metadata.append(website)
     metadata.append(Element('link', [('rel', 'canonical'), ('href', canonical)]))
     for lang in ('uk', 'en', 'x-default'):
         metadata.append(Element('link', [('rel', 'alternate'), ('hreflang', lang), ('href', urljoin(base, ('uk' if lang == 'x-default' else lang) + '/'))]))
@@ -155,8 +168,9 @@ def render(content, template, language):
         for key in list(a):
             if key.startswith('data-') and key != 'data-nosnippet':
                 del a[key]
-        for child in node.children:
-            bind(child)
+        if node.tag != 'script':
+            for child in node.children:
+                bind(child)
     bind(tree)
     return serialize(tree)
 
